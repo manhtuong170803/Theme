@@ -1,0 +1,13 @@
+/*
+    Section 3
+*/
+.content-blog-3-column{
+    @extend .latest-blog-home-four;
+    &.sec-padding{
+        padding-bottom: 0;
+    }
+    .box{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+}

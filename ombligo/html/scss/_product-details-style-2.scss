@@ -1,0 +1,326 @@
+/*
+    Section 3
+*/
+.oily-rag-clothing{
+    .thumbnai-fotorama{
+        position: relative;
+        border: 5px solid #efefef;
+        .logo{
+            position: absolute;
+            top: 30px;
+            left: 15px;
+        }
+        .hot-sale{
+            top: 45px;
+            right: 45px;
+        }
+        .fotorama{
+            margin: 0 10px;
+            .fotorama__wrap{
+                padding-top: 85px;
+            }
+            .fotorama__nav-wrap{
+                .fotorama__nav{
+                    counter-reset: section;
+                    .fotorama__nav__shaft{
+                        margin: 0 auto;
+                        text-align: left;
+                        .fotorama__nav__frame{
+                            padding-top: 0 !important;
+                            background-color: $default-text;
+                            padding-bottom: 65px;
+                            &:before{
+                                counter-increment: section;
+                                content: "Image 0" counter(section);
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 14px;
+                                font-weight: 300;
+                                color: $black-text;
+                                position: absolute;
+                                bottom: 38px;
+                                left: 20%;
+                                opacity: 0;
+                                transition: all .5s ease;
+                            }
+                            .fotorama__thumb{
+                                background-color: $default-text;
+                                border: 1px solid #e3e3e3;
+                            }
+                            &.fotorama__active{
+                                &:before{
+                                    opacity: 1;
+                                    transition: all .5s ease;
+                                }
+                                .fotorama__thumb{
+                                    border-bottom: 2px solid $primary-color-orange;
+                                }
+                            }
+                        }
+                        .fotorama__thumb-border{
+                            border-color: #e3e3e3;
+                            background-image: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box{
+        @extend .banner-style-four;
+        padding-left: 60px;
+        background: none;
+        &:before,&:after{
+            display: none;
+        }
+        .content{
+            .title h6,h3,h5,p{
+                color: $black-text;
+            }
+            h5{
+                span{
+                    color: $black-text;
+                    opacity: .5;
+                }
+            }
+            .rating{
+                li{
+                    border-left: 1px solid #bfbfbf;
+                    .rateYo{
+                        top: 0;
+                        left: 0;
+                    }
+                    a{
+                        color: $black-text;
+                    }
+                }
+            }
+            p{
+                padding-bottom: 34px;
+            }
+            .color{
+                margin-right: 45px;
+                float: left;
+                ul{
+                    padding-left: 30px;
+                }
+            }
+            .qty{
+                .box-qty{
+                    .button{
+                        color: $black-text;
+                    }
+                    input{
+                        border: 2px solid #e8e8e8;
+                        color: $black-text;
+                    }
+                }
+            }
+            .add-to-card{
+                margin-top: 12px;
+                clear: left;
+                .button-add-to-card{
+                    display: block;
+                    height: 50px;
+                    line-height: 50px;
+                    padding: 0 30px;
+                    background: $primary-color-orange;
+                    color: $default-text !important;
+                    border-radius: 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: 'Oswald', sans-serif;
+                    .icon{
+                        padding-right: 20px;
+                        color: $default-text;
+                        font-size: 18px;
+                    }
+                }
+                .omb-hover-sweep-to-bottom{
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    border: 2px solid #e8e8e8;
+                    margin-left: 10px;
+                    display: block;
+                    &:before{
+                        background: $primary-color-orange;
+                    }
+                    &:hover{
+                        .icon{
+                            color: $default-text;
+                            opacity: 1;
+                            transition: all .5s ease;
+                        }
+                    }
+                    .icon{
+                        font-size: 18px;
+                        color: $black-text;
+                        opacity: .35;
+                        transition: all .5s ease;
+                    }
+                }
+            }
+            .share{
+                margin-bottom: 50px;
+                margin-top: 40px;
+                ul{
+                    -ms-flex: 1 1 auto;
+                    margin-left: 23px;
+                    li{
+                        display: inline-block;
+                        margin-left: 7px;
+                        a{
+                            display: block;
+                            width: 45px;
+                            height: 45px;
+                            line-height: 45px;
+                            text-align: center;
+                            border: 2px solid #e8e8e8;
+                            font-size: 14px;
+                            color: #000000;
+                            opacity: .35;
+                            &:hover{
+                                border: 2px solid $primary-color-orange;
+                                opacity: 1;
+                                transition: all .5s ease;
+                            }
+                        }
+                    }
+                }
+            }
+            .information{
+                .menu-info{
+                    margin-bottom: 20px;
+                    border-top: 2px solid #e6e6e6;
+                    border-bottom: 2px solid #e6e6e6;
+                    li{
+                        display: inline-block;
+                        padding-right: 60px;
+                        &:hover,&.uk-active{
+                            a{
+                                opacity: 1;
+                                transition: all .5s ease;
+                            }
+                        }
+                        &:last-child{
+                            padding-right: 0;
+                        }
+                        a{
+                            display: inline-block;
+                            height: 53px;
+                            line-height: 53px;
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 18px;
+                            font-weight: 700;
+                            color: $black-text;
+                            opacity: .35;
+                            transition: all .5s ease;
+                        }
+                    }
+                }
+                #oily_rag_clothing{
+                    li{
+                        .content-text{
+                            .text{
+                                padding-top: 15px;
+                                h6{
+                                    font-size: 14px;
+                                    color: $black-text;
+                                    font-weight: 700;
+                                    padding-bottom: 5px;
+                                }
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: $black-text;
+                                    opacity: .5;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.related-product{
+    @extend .best-new-product;
+    &.sec-padding{
+        padding-top: 0;
+        padding-bottom: 180px;
+    }
+    .omb-title.omb-title-four{
+        .box-flex{
+            display: block;
+            position: relative;
+            &:before{
+                content: '';
+                background: #d5d5d5;
+                height: 1px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                @include translateY(-50%);
+            }
+            .title{
+                padding-bottom: 0;
+                .text{
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 30px;
+                    background: $default-text;
+                    .line.line-left{
+                        left: 0;
+                        right: auto;
+                    }
+                    .line.line-right{
+                        left: auto;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .uk-slidenav-position{
+        position: relative;
+        .uk-slidenav{
+            position: absolute;
+            bottom: -80px;
+            display: inline-block;
+            &:before{
+                display: block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #e7e7e7;
+                font-family: 'ElegantIcons';
+                font-size: 24px;
+                color: $black-text;
+            }
+            &.uk-slidenav-previous{
+                margin-left: -30px;
+                left: 50%;
+                @include translateX(-50%);
+                &:before{
+                    content: '\34';
+                }
+            }
+            &.uk-slidenav-next{
+                margin-left: 30px;
+                left: 50%;
+                @include translateX(-50%);
+                &:before{
+                    content: '\35';
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,110 @@
+////[Table of contents]
+
+////1. Background Cover
+////2. Scale
+////3. ScaleY
+////4. ScaleX
+////5. TranslateY
+////6. TranslateX
+////7. TranslateXY
+////8. Rotate
+////9. SkewX
+////10. SkewY
+////11. Gradient Text
+
+////[End table of contents]
+@mixin background-cover(){
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@mixin scale($number){
+    -webkit-transform: scale($number);
+    -moz-transform: scale($number);
+    -ms-transform: scale($number);
+    -o-transform: scale($number);
+    transform: scale($number);
+}
+
+@mixin scaleY($y){
+    -webkit-transform: scaleY($y);
+    -moz-transform: scaleY($y);
+    -ms-transform: scaleY($y);
+    -o-transform: scaleY($y);
+    transform: scaleY($y);
+}
+
+@mixin scaleX($x){
+    -webkit-transform: scaleX($x);
+    -moz-transform: scaleX($x);
+    -ms-transform: scaleX($x);
+    -o-transform: scaleX($x);
+    transform: scaleX($x);
+}
+
+@mixin translateY($y){
+    -webkit-transform: translateY($y);
+    -moz-transform: translateY($y);
+    -ms-transform: translateY($y);
+    -o-transform: translateY($y);
+    transform: translateY($y);
+}
+
+@mixin translateX($x){
+    -webkit-transform: translateX($x);
+    -moz-transform: translateX($x);
+    -ms-transform: translateX($x);
+    -o-transform: translateX($x);
+    transform: translateX($x);
+}
+
+@mixin translateXY($x,$y){
+    -webkit-transform: translateX($x) translateY($y);
+    -moz-transform: translateX($x) translateY($y);
+    -ms-transform: translateX($x) translateY($y);
+    -o-transform: translateX($x) translateY($y);
+    transform: translateX($x) translateY($y);
+}
+
+@mixin rotate($number){
+    -webkit-transform: rotate($number);
+    -moz-transform: rotate($number);
+    -ms-transform: rotate($number);
+    -o-transform: rotate($number);
+    transform: rotate($number);
+}
+
+@mixin skewX($x){
+    -webkit-transform: skewX($x);
+    -moz-transform: skewX($x);
+    -ms-transform: skewX($x);
+    -o-transform: skewX($x);
+    transform: skewX($x);
+}
+
+@mixin skewY($y){
+    -webkit-transform: skewY($y);
+    -moz-transform: skewY($y);
+    -ms-transform: skewY($y);
+    -o-transform: skewY($y);
+    transform: skewY($y);
+}
+
+@mixin gradient-text(){
+    -webkit-transform: scaleX(1) scaleY(-1) scaleZ(1) translateY(-85%); 
+    -moz-transform: scaleX(1) scaleY(-1) scaleZ(1) translateY(-85%); 
+    -ms-transform: scaleX(1) scaleY(-1) scaleZ(1) translateY(-85%);
+    -o-transform: scaleX(1) scaleY(-1) scaleZ(1) translateY(-85%); 
+    transform: scaleX(1) scaleY(-1) scaleZ(1) translateY(-85%);
+    -webkit-transform-origin: 50% 0 0;
+    -moz-transform-origin: 50% 0 0;
+    -ms-transform-origin: 50% 0 0;
+    -o-transform-origin: 50% 0 0;
+    transform-origin: 50% 0 0;
+    -webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0) 50%);
+    -moz-mask-image: -moz-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0) 50%);
+    -ms-mask-image: -ms-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0) 50%);
+    -o-mask-image: -o-linear-gradient(bottom, rgba(0,0,0,.6), rgba(0,0,0,0) 50%);
+}

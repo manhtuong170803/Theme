@@ -1,0 +1,15 @@
+/*
+    Section 3
+*/
+.motorcycle-product-2-column-style-2{
+    @extend .categories-product-home-six;
+    .omb-title{
+        padding-bottom: 80px;
+    }
+    .uk-pagination{
+        margin-top: 80px;
+        li{
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,256 @@
+/*
+    Section 4
+*/
+.content-product-list-sidebar-style-one{
+    @extend .best-accessories;
+    &.sec-padding{
+        padding-top: 0;
+    }
+    ul.box-accessories{
+        li{
+            .box{
+                margin-top: 0;
+                .box-img{
+                    &:before,&:after{
+                        display: none;
+                    }
+                    .title{
+                        opacity: 1 !important;
+                    }
+                }
+            }
+        }
+    }
+    ul{
+        li{
+            &:nth-child(even){
+                .box-slider{
+                    .uk-slideset-nav{
+                        left: 50%;
+                        @include translateX(-50%);
+                        margin-left: 230px;
+                    }
+                    .uk-slidenav-position{
+                        li{
+                            .box-product{
+                                .uk-width-medium-3-5{
+                                    &:after{
+                                        left: auto;
+                                        right: -1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .box-slider{
+                margin-top: 50px;
+                position: relative;
+                .uk-slideset-nav{
+                    margin: 0;
+                    position: absolute;
+                    left: 50%;
+                    @include translateX(-50%);
+                    margin-left: -230px;
+                    bottom: 40px;
+                    z-index: 999;
+                    li{
+                        margin: 10px 0px;
+                        padding: 0px 10px;
+                        &:hover,&.uk-active{
+                            a{
+                                background: $primary-color-orange;
+                                transition: all 0.5s ease;
+                            }
+                        }
+                        a{
+                            width: 10px;
+                            height: 10px;
+                            background: #e8e8e8;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+                .uk-slidenav-position{
+                    li{
+                        .box-product{
+                            border: none;
+                            .uk-width-medium-2-5{
+                                border: 1px solid #e0e0e0;
+                                img{
+                                    display: block;
+                                    margin: 60px auto 125px auto;
+                                }
+                            }
+                            .uk-width-medium-3-5{
+                                border: 1px solid #e0e0e0;
+                                text-align: left;
+                                padding: 45px 0 40px 80px;
+                                position: relative;
+                                &:after{
+                                    content: '';
+                                    width: 1px;
+                                    height: 100%;
+                                    background: $default-text;
+                                    position: absolute;
+                                    top: 0;
+                                    left: -1px;
+                                }
+                                .hot-sale{
+                                    z-index: 9;
+                                    left: -62px;
+                                    top: 110px;
+                                    @include rotate(90deg);
+                                }
+                                >h5{
+                                    font-size: 24px;
+                                    font-weight: 300;
+                                    color: $black-text;
+                                }
+                                h3{
+                                    margin-top: 20px;
+                                    font-family: 'Oswald', sans-serif;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    color: $black-text;
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    span{
+                                        font-family: 'Oswald', sans-serif;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        color: $black-text;
+                                        opacity: 0.35;
+                                        text-decoration: line-through;
+                                        padding-left: 15px;
+                                    }
+                                }
+                                p{
+                                    margin-top: 20px;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: $black-text;
+                                    opacity: .5;
+                                }
+                                .social{
+                                    margin-top: 40px;
+                                    margin-left: -10px;
+                                    position: relative;
+                                    a{
+                                        padding: 0 10px;
+                                        position: relative;
+                                        display: block;
+                                        float: left;
+                                        &:first-child{
+                                            i{
+                                                margin-left: -8px;
+                                            }
+                                        }
+                                        &:hover{
+                                            .icon{
+                                                background: $primary-color-blue;
+                                                color: $default-text;
+                                                transition: all .5s ease;
+                                            }
+                                            i{
+                                                opacity: 1;
+                                                transition: all .5s ease;
+                                            }
+                                        }
+                                        .icon{
+                                            display: block;
+                                            width: 50px;
+                                            height: 50px;
+                                            line-height: 50px;
+                                            text-align: center;
+                                            font-size: 18px;
+                                            color: $black-text;
+                                            background: #ececec;
+                                            border-radius: 50%;
+                                            transition: all .5s ease;
+                                        }
+                                        i{
+                                            font-family: 'Oswald', sans-serif;
+                                            font-size: 10px;
+                                            font-weight: 500;
+                                            color: $black-text;
+                                            text-align: center;
+                                            position: absolute;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: -35px;
+                                            opacity: 0;
+                                            transition: all .5s ease;
+                                        }
+                                    }
+                                    .rateYo{
+                                        position: absolute;
+                                        left: auto;
+                                        right: 50px;
+                                        top: 50%;
+                                        @include translateY(-50%);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .uk-slidenav{
+        display: block;
+        width: 40px;
+        height: 60px;
+        &:before{
+            display: none;
+        }
+        &:hover{
+            &.uk-slidenav-previous{
+                background: url('../images/product-list-sidebar-style-1/prev-hover.png') no-repeat center center;
+                @include background-cover();
+                transition: all .5s ease;
+            }
+            &.uk-slidenav-next{
+                background: url('../images/product-list-sidebar-style-1/next-hover.png') no-repeat center center;
+                @include background-cover();
+                transition: all .5s ease;
+            }
+        }
+        &.uk-slidenav-previous{
+            left: 50px;
+            background: url('../images/product-list-sidebar-style-1/prev.png') no-repeat center center;
+            @include background-cover();
+            transition: all .5s ease;
+        }
+        &.uk-slidenav-next{
+            right: 50px;
+            background: url('../images/product-list-sidebar-style-1/next.png') no-repeat center center;
+            @include background-cover();
+            transition: all .5s ease;
+        }
+    }
+    .uk-pagination{
+        margin-top: 80px;
+        text-align: left;
+        position: relative;
+        li{
+            &:nth-child(2){
+                padding-left: 0;
+            }
+            &.prev,&.next{
+                padding: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+            }
+            &.prev{
+                right: 60px;
+            }
+            &.next{
+                right: 0;
+            }
+        }
+    }
+}

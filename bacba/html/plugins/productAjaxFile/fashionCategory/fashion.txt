@@ -1,0 +1,108 @@
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-1-1.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-1-2.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-1-3.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-2-1.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-2-2.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>
+<div class="category-product-box">
+    <div class="product-image">
+        <img src="images/product-image-col-2-3.jpg" alt="ezBoozt Braided Sports">
+        <a href="#" class="add-to-cart"></a>
+        <a href="#" class="wc-button wc-button-wishlist"></a>
+        <a href="#" class="wc-button wc-button-compare"></a>
+        <a href="#" class="wc-button wc-button-quick-view"></a>
+    </div>
+    <div class="product-info">
+        <a href="#">
+            <h3 class="product-name">ezBoozt Braided Sports</h3>
+        </a>
+        <span>Boots</span>
+        <div class="price">
+            <p class="price-sale"><span class="amount">$</span>250.00</p>
+        </div>
+    </div>
+</div>

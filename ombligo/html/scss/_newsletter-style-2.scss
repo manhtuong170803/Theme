@@ -1,0 +1,39 @@
+/*
+    Section 1
+*/
+.newsletter-popup-style-2{
+    @extend .newsletter-popup-style-1;
+    #mask {
+        background: rgba($black-text,.5);
+    }
+    #dialog{
+        .background-rgba{
+            border: 2px solid $default-text;
+            background: transparent;
+            padding: 3px;
+            position: relative;
+            .box{
+                background: $default-text;
+                padding: 0 60px 0 0;
+                display: flex;
+                align-items: center;
+                >img{
+                    display: block;
+                    margin: -110px 110px 0 75px;
+                    float: left;
+                }
+                #cloes_popup{
+                    background: $primary-color-blue;
+                    color: $default-text;
+                    right: auto;
+                    left: 50%;
+                    top: -30px;
+                    margin-left: -30px;
+                }
+                .box-subscribe{
+                    float: right;
+                }
+            }
+        }
+    }
+}

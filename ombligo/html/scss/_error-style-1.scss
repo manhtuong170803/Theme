@@ -1,0 +1,102 @@
+/*
+    Section 1
+*/
+.error-style-1{
+    height: 100vh;
+    background: url('../images/error/background-style-1.jpg') no-repeat center center;
+    @include background-cover();
+    position: relative;
+    .full-height{
+        height: 100%;
+        align-items: center;
+    }
+    .box{
+        &.left{
+            padding-left: 140px;
+            .box-rotate{
+                a{
+                    &:hover{
+                        color: $primary-color-orange;
+                        transition: all .5s ease;
+                    }
+                    &:nth-child(1){
+                        top: 10px;
+                        left: 35px;
+                    }
+                    &:nth-child(2){
+                        transform: rotate(-90deg);
+                        right: -25px;
+                        bottom: 100px;
+                    }
+                }
+                .text{
+                    margin-left: -20px;
+                    margin-top: 45px;
+                    margin-bottom: -20px;
+                    margin-right: 45px;
+                    background: $primary-color-orange;
+                    h3{
+                        font-size: 100px;
+                        padding: 0 42px;
+                    }
+                }
+            }
+        }
+        &.right{
+            padding-right: 140px;
+            .box-rotate{
+                a{
+                    &:hover{
+                        color: $primary-color-blue;
+                        transition: all .5s ease;
+                    }
+                    &:nth-child(1){
+                        transform: rotate(-90deg);
+                        left: -40px;
+                        top: 100px;
+                    }
+                    &:nth-child(2){
+                        bottom: 10px;
+                        right: 35px;
+                    }
+                }
+                .text{
+                    margin-right: -20px;
+                    margin-bottom: 45px;
+                    margin-top: -20px;
+                    margin-left: 45px;
+                    background: $primary-color-blue;
+                    h3{
+                        font-size: 70px;
+                        padding: 0 23px;
+                    }
+                }
+            }
+        }
+        .box-rotate{
+            display: inline-block;
+            border: 5px solid $default-text;
+            @include rotate(45deg);
+            a{
+                font-family: 'Oswald', sans-serif;
+                font-size: 14px;
+                font-weight: 700;
+                color: $default-text;
+                z-index: 999;
+                position: absolute;
+                transition: all .5s ease;
+            }
+            .text{
+                display: inline-block;
+                h3{
+                    display: inline-block;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight: 700;
+                    line-height: 245px;
+                    color: $default-text;
+                    @include rotate(-45deg);
+                }
+            }
+        }
+    }
+}

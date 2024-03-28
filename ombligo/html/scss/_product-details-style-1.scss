@@ -1,0 +1,193 @@
+/*
+    Section 3
+*/
+.product-description{
+    @extend .welcome-ombligo;
+    &.sec-padding{
+        padding-top: 65px;
+    }
+    .information{
+        .menu-info{
+            text-align: center;
+            li{
+                display: inline-block;
+                margin: 0 45px;
+                &:hover,&.uk-active{
+                    a{
+                        opacity: 1;
+                        transition: all .5s ease;
+                    }
+                }
+                &:after{
+                    display: none;
+                }
+                a{
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $black-text;
+                    opacity: .35;
+                    height: 45px;
+                    line-height: 45px;
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+    #product_description{
+        .button{
+            font-size: 24px;
+            color: $black-text;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            @include translateX(-50%);
+            opacity: .5;
+            &:hover{
+                opacity: 1;
+            }
+            &.prev{
+                margin-left: -25px;
+            }
+            &.next{
+                margin-left: 25px;
+            }
+        }
+        >li{
+            margin-top: 50px;
+            padding: 80px 50px 50px 50px;
+            border: 5px solid #efefef;
+            text-align: center;
+            .flipping{
+                margin: 0 auto;
+                .gallery-flipping{
+                    width: auto;
+                    height: 500px;
+                    .wrapper{
+                        position: relative;
+                        top: auto;
+                        right: auto;
+                        bottom: auto;
+                        left: auto;
+                        .box-img{
+                            width: auto;
+                            img{
+                                width: auto;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+                p{
+                    font-size: 13px;
+                    color: $black-text;
+                    padding-top: 20px;
+                }
+            }
+            .blog-review{
+                text-align: left;
+                h3{
+                    padding-bottom: 15px;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $black-text;
+                }
+                li{
+                    border-bottom: 1px solid #dddddd;
+                    .review-box{
+                        display: flex;
+                        padding-bottom: 30px;
+                        .review-img{
+                            img{
+                                width: 100px;
+                                height: auto;
+                                display: block;
+                            }
+                        }
+                        .review-content{
+                            -ms-flex: 1 1 auto;
+                            text-align: left;
+                            padding-left: 20px;
+                            h6{
+                                line-height: 25px;
+                                font-weight: 300;
+                                color: $black-text;
+                                font-style: italic;
+                                padding-bottom: 10px;
+                                span[class*='icon']{
+                                    color: $primary-color-orange;
+                                }
+                            }
+                            p{
+                                line-height: 25px;
+                                color: $black-text;
+                            }
+                        }
+                    }
+                }
+                .form-comment{
+                    margin-top: 30px;
+                    h3{
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 500;
+                        font-size: 20px;
+                        color: #7f7f7f;
+                    }
+                    h5{
+                        font-family: 'Oswald', sans-serif;
+                        font-weight: 500;
+                        color: $black-text;
+                    }
+                    .rateYo {
+                        margin: 10px 0;
+                        top: 0;
+                        left: 0;
+                    }
+                    input,textarea{
+                        width: 100%;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 12px;
+                        color: $black-text;
+                        margin-bottom: 30px;
+                        &:focus{
+                            background: transparent;
+                            outline: none;
+                            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                            border: 1px solid $primary-color-orange;
+                            transition: all .5s ease;
+                        }
+                    }
+                    input{
+                        height: 45px;
+                        line-height: 45px;
+                    }
+                    .omb-button{
+                        border: 1px solid #efefef;
+                        padding: 0 37px;
+                        background: $primary-color-orange;
+                        color: $default-text !important;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.recent-product{
+    @extend .best-new-product;
+    position: relative;
+    background: #f2f2f2;
+    #product_hover{
+        li{
+            &:hover{
+                .omb-product{
+                    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bacba Shop - HTML Template</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="plugins/normalize.css" rel="stylesheet" type="text/css">
+        <link href="plugins/animate.min.css" rel="stylesheet" type="text/css">
+        <link href="plugins/uikit-2.27.5/css/uikit.min.css" rel="stylesheet" type="text/css">
+        <link href="plugins/lightGallery/dist/css/lightgallery.min.css" rel="stylesheet" >
+        <link href="plugins/rangeSlider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css">
+        <link href="plugins/rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet" type="text/css">
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN TEMPLATE LAYOUT STYLES -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- END TEMPLATE LAYOUT STYLES -->
+        <link rel="shortcut icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <!-- BEGIN TOP BAR -->
+        <div class="top-bar-home-v6 uk-clearfix">
+            <div class="top-bar-left">
+                <ul>
+                    <li class="email">
+                        <p>Email: <a href="mailto:demo@demo.com">demo@demo.com</a></p>             
+                    </li>
+                    <li class="call">
+                        <p>Call us: <a href="tel:123 456 7892">123 456 7892</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="top-bar-right">
+                <ul>
+                    <li class="register">
+                        <a href="#">Register</a>
+                    </li>
+                    <li class="siggn-in">
+                        <i class="uk-icon-user"></i>
+                        <a href="#">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END TOP BAR -->
+        <!-- BEGIN HEADER -->
+        <header class="site-header header-v6"> 
+            <div class="header stricky uk-clearfix">
+                <div class="header-left">
+                    <ul>
+                        <li class="hidden-desktop">
+                            <a href="index.html"><img src="images/logo-homev6.png" alt=""></a>
+                        </li>
+                        <li class="hidden-mobile">
+
+                            <div class="search uk-margin">
+                                <form class="uk-search uk-search-default">
+                                    <span class="uk-icon-search"></span>
+                                    <input class="uk-search-input" type="search" placeholder="Search our catalog">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <nav id="site-navigation" class="main-menu">
+                    <div class="logo-home-v6">                    
+                        <a href="index.html"><img src="images/logo-homev6.png" alt=""></a>                   
+                    </div>
+                    <ul id="menu-menu-main" class="menu">
+                        <li class="menu-item" data-uk-dropdown="{mode:'hover'}">
+                            <a href="index.html">Home</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="sub-menu uk-nav uk-nav-dropdown">
+                                    <li><a href="index-2.html">Home 2</a></li>
+                                    <li><a href="index-3.html">Home 3</a></li>
+                                    <li><a href="index-4.html">Home 4</a></li>
+                                    <li><a href="index-5.html">Home 5</a></li>
+                                    <li><a href="index-6.html">Home 6</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item current-menu-item current_page_item" data-uk-dropdown="{mode:'hover'}">
+                            <a href="shop.html">Shop</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="sub-menu uk-nav uk-nav-dropdown">
+                                    <li><a href="shop-cart.html">Shop Cart</a></li>
+                                    <li><a href="shop-detail.html">Shop Detail</a></li>
+                                    <li><a href="shop-order.html">Shop Order</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item current-menu-item" data-uk-dropdown="{mode:'hover'}">
+                            <a href="blog.html">Blog</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="sub-menu uk-nav uk-nav-dropdown">
+                                    <li><a href="blog-detail.html">Blog Detail</a></li>
+                                </ul>
+                            </div>
+                        </li>            
+                        <li class="menu-item current-menu-item" data-uk-dropdown="{mode:'hover'}">
+                            <a href="#">Page</a>
+                            <div class="uk-dropdown uk-dropdown-small">
+                                <ul class="sub-menu uk-nav uk-nav-dropdown">
+                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                    <li><a href="404.html">404</a></li>
+                                </ul>
+                            </div>
+                        </li>                      
+                    </ul>
+                </nav>
+                <div class="header-right">
+                    <ul>
+                        <li class="hidden-desktop">
+                            <a href="#" id="bacba_toggle_menu" class="bacba-toggle-menu"><i class="uk-icon-bars"></i></a>
+                        </li>
+                        <li class="hidden-mobile">
+                            <a href="#" class="wc-cart"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- END HEADER -->
+        <!-- BEGIN CONTAINER -->
+        <!-- BEGIN BREADCRUMB -->
+        <section class="bacba-breadcrumb">
+            <div class="uk-container uk-container-center">
+                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                    <div class="breadcrumb-wrap">
+                        <ul>
+                            <li><span><a href="index.html">HOME</a></span></li>
+                            <li><span class="delimiter"><i class="uk-icon-angle-right"></i></span></li>
+                            <li><span class="current">SHOP</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- END BREADCRUMB -->
+        <!-- BEGIN BANNER -->
+        <section class="ss-shop-banner">
+            <div class="uk-container uk-container-center">
+                <div class="uk-width-medium-1-1 uk-width-small-1-1 uk-width-1-1">
+                    <div class="text-block">
+                        <h2>COLLECTION</h2>
+                        <h3>SAVE OF TO <span>60%</span></h3>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- END BANNER -->
+        <!-- BEGIN SHOP CONTENT -->
+        <section class="ss-shop-content">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-full-width-1000 uk-push-1-3 uk-width-medium-2-3 uk-width-small-1-1 uk-width-1-1">
+                        <div class="shop-control">
+                            <h2>PRODUCT</h2>
+                            <div class="bacba-row-flex">
+                                <div class="right">
+                                    <div class="js-modes-mode">
+                                        <a data-layout="product-grid" class="modes-mode mode-grid display-mode uk-active" >
+                                            <span class="button-inner"></span>
+                                        </a>
+                                        <a data-layout="product-list" class="modes-mode mode-list display-mode ">
+                                            <span class="button-inner"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="left">
+                                    <div class="woocommerce-ordering-wrapper">
+                                        <form class="woocommerce-ordering bacba-custom-select" method="get" action="#">
+                                            <select name="orderby" class="orderby custom-select sources">
+                                                <option value="popularity">Sort by popularity</option>
+                                                <option value="rating">Sort by average rating</option>
+                                                <option value="date" selected>Sort by latest</option>
+                                                <option value="price">Sort by price: low to high</option>
+                                                <option value="price-desc">Sort by price: high to low</option>
+                                            </select>
+                                            <input type="hidden" name="paged" value="1">
+                                        </form>
+                                    </div>
+                                    <div class="per-page-wrapper">
+                                        <form class="per-page-form bacba-custom-select" method="GET" action="#">
+                                            <select name="product_per_page" class="option-perpage custom-select sources">
+                                                <option value="6">Show 06</option>
+                                                <option value="9" selected>Show 9</option>
+                                                <option value="12">Show 12</option>
+                                                <option value="15">Show 15</option>
+                                                <option value="120">Show All</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-product">
+                            <div class="bacba-ajax-loading">
+                                <img src="images/loading.gif" alt="loading"> 
+                            </div>
+                            <div class="js-product-layout">
+                                <div class="product-mode-grid">
+                                    <div class="uk-grid">
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-25.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-26.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-27.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-26.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-28.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-25.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-25.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-27.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-full-width-601 uk-width-medium-1-3 uk-width-small-1-2 uk-width-1-1">
+                                            <div class="box-product uk-text-center">
+                                                <div class="product-image">
+                                                    <img src="images/products/product-28.jpg" alt="ezBoozt Braided Sports">
+                                                    <a href="#" class="add-to-cart"></a>
+                                                    <a href="#" class="wc-button wc-button-wishlist"></a>
+                                                    <a href="#" class="wc-button wc-button-compare"></a>
+                                                    <a href="#" class="wc-button wc-button-quick-view"></a>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                                    <p class="product-cat">Boots</p>
+                                                    <p class="product-price">$250.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="bacba-pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li class="uk-active"><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-full-width-1000 uk-pull-2-3 uk-width-medium-1-3 uk-width-small-1-1 uk-width-1-1">
+                        <div class="sidebar-shop">
+                            <div class="widget widget-shopping-cart">
+                                <h2 class="widget-title">Cart</h2>
+                                <p>No products in the cart.</p>
+                            </div>
+                            <div class="widget widget-product-cate">
+                                <h2 class="widget-title">Categories</h2>
+                                <ul class="list-cate">
+                                    <li><a href="#"><i class="uk-icon-angle-right"></i>Hot trend <span>(3)</span></a></li>
+                                    <li><a href="#"><i class="uk-icon-angle-right"></i>Fashion <span>(7)</span></a></li>
+                                    <li><a href="#"><i class="uk-icon-angle-right"></i>Sport's <span>(2)</span></a></li>
+                                    <li><a href="#"><i class="uk-icon-angle-right"></i>Men's <span>(8)</span></a></li>
+                                    <li><a href="#"><i class="uk-icon-angle-right"></i>Women's <span>(9)</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="widget widget-product-filter">
+                                <h2 class="widget-title">Filter By Price</h2>
+                                <div class="range-slider">
+                                    <input type="text" class="js-range-slider" value="" />
+                                </div>
+                                <div class="uk-text-center">
+                                    <button type="button" class="button-filter">Filter</button>
+                                </div>
+                            </div>
+                            <div class="widget widget-product-typical">
+                                <h2 class="widget-title">Typical products</h2>
+                                <ul class="product-typical">
+                                    <li>
+                                        <div class="bacba-row-flex">
+                                            <div class="product-thumb">
+                                                <a href="#"><img src="images/products/typical-product-1.png" alt="Yoga Sports Bra Crop Top Green"></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3><a href="#">Yoga Sports Bra Crop Top Green</a></h3>
+                                                <p class="price">$36.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bacba-row-flex">
+                                            <div class="product-thumb">
+                                                <a href="#"><img src="images/products/typical-product-2.png" alt="Yoga Sports Bra Crop Top Blue"></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3><a href="#">Yoga Sports Bra Crop Top Blue</a></h3>
+                                                <p class="price">$36.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bacba-row-flex">
+                                            <div class="product-thumb">
+                                                <a href="#"><img src="images/products/typical-product-3.png" alt="Yoga Sports Bra Crop Top Violet"></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3><a href="#">Yoga Sports Bra Crop Top Violet</a></h3>
+                                                <p class="price">$36.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="bacba-row-flex">
+                                            <div class="product-thumb">
+                                                <a href="#"><img src="images/products/typical-product-4.png" alt="Yoga Sports Bra Crop Top Red"></a>
+                                            </div>
+                                            <div class="product-info">
+                                                <h3><a href="#">Yoga Sports Bra Crop Top Red</a></h3>
+                                                <p class="price">$36.00</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section> 
+        <!-- END SHOP CONTENT -->
+        <!-- BEGIN MAILCHIMP -->
+        <section class="ss-mailchimp">
+            <div class="uk-container uk-container-center">
+                <div class="uk-grid">
+                    <div class="uk-full-width-1000 uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
+                        <h2>Sign up for news <br> and get <span>10% off</span></h2>
+                    </div>
+                    <div class="uk-full-width-1000 uk-width-medium-1-2 uk-width-small-1-1 uk-width-1-1">
+                        <form method="get" class="instance-search" action="#">
+                            <div class="search-fields"> 
+                                <button type="submit" class="submit"> 
+                                    <i class="uk-icon-paper-plane-o"></i>
+                                </button> 
+                                <input type="text" placeholder="Your email address" class="search-field" autocomplete="off"> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- END MAILCHIMP -->
+        <!-- END CONTAINER -->
+        <!-- BEGIN FOOTER -->
+        <footer class="footer-v6">
+            <div class="footer">
+                <div class="uk-container uk-container-center">
+                    <div class="uk-grid">
+                        <div class="column1 uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <a href="index.html"><img src="images/logo-foot.png" alt=""></a>
+                            <ul class="foot-contact">
+                                <li><p><i class="uk-icon-home"></i><span>Address:</span> Permanent  Thomas 5322 Otter Lane Middleberge FL 32068</p></li>
+                                <li><p><i class="uk-icon-phone"></i><span>Phone:</span><a href="tel:+1-541 754 010"> +1-541 754 010</a></p></li>
+                                <li><p><i class="uk-icon-envelope"></i><span>Email:</span><a href="mailto:contactus@gmail.com"> contactus@gmail.com</a></p></li>
+                            </ul>
+                            <ul class="foot-social">
+                                <li><a href="#"><i class="uk-icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="uk-icon-vimeo"></i></a></li>
+                                <li><a href="#"><i class="uk-icon-youtube"></i></a></li>
+                                <li><a href="#"><i class="uk-icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="uk-icon-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="column2 uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <h3 class="foot-col-title">PRODUCT TAGS</h3>
+                            <ul class="foot-tags">
+                                <li><a href="#">Shoes</a></li>
+                                <li><a href="#">Socks</a></li>
+                                <li><a href="#">Bow tie</a></li>
+                                <li><a href="#">Trench</a></li>
+                                <li><a href="#">Vest</a></li>
+                                <li><a href="#">Blazer</a></li>
+                                <li><a href="#">Sweater</a></li>
+                                <li><a href="#">Skirt</a></li>
+                                <li><a href="#">Slippers</a></li>
+                                <li><a href="#">Flats</a></li>
+                                <li><a href="#">Sandals</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Slippers</a></li>
+                                <li><a href="#">Boots</a></li>
+                                <li><a href="#">Jacket</a></li>
+                            </ul>
+                        </div>
+                        <div class="column3 uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <h3 class="foot-col-title">CUSTOMER CARE</h3>
+                            <ul class="foot-menu">
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>About Us</a></li>
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>Contact Us</a></li>
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>Shopping cart</a></li>
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>Customer Service</a></li>
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>International Shipping</a></li>
+                                <li><a href="#"><i class="uk-icon-angle-right"></i>Terms & Condition</a></li>
+                            </ul>
+                        </div>
+                        <div class="column4 uk-width-medium-1-4 uk-width-small-1-2 uk-width-1-1">
+                            <h3 class="foot-col-title">IMAGE GALLERY</h3>
+                            <ul id="gallery_widget">
+                                <li data-src="images/gallery/image-gallery-1.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-1.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li data-src="images/gallery/image-gallery-2.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-2.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li data-src="images/gallery/image-gallery-3.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-3.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li data-src="images/gallery/image-gallery-4.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-4.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li data-src="images/gallery/image-gallery-5.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-5.jpg" alt="" />
+                                    </a>
+                                </li>
+                                <li data-src="images/gallery/image-gallery-6.jpg">
+                                    <a href="#">
+                                        <i class="uk-icon-plus"></i>
+                                        <img src="images/gallery/image-gallery-thumb-6.jpg" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <ul>
+                    <li><a href="#">Store Locator</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">Track your Order</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><span>|</span></li>
+                    <li><a href="#">My Account</a></li>
+                </ul>
+                <p>© 2019. All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+        <!-- BEGIN BACK TO TOP -->
+        <a class="bacba-backtop template-home-v6" data-uk-smooth-scroll><span class="uk-icon uk-icon-long-arrow-up"></span></a>
+        <!-- END BACK TO TOP -->
+        <!-- BEGIN MENU MOBILE -->
+        <div id="bacba_menu_mobile" class="bacba-menu-mobile template-home-v6">
+            <div class="bacba-menu-padding">
+                <div class="bacba-menu-logo">
+                    <div class="bacba-logo-mobile-wrap"> 
+                        <div class="bacba-logo-mobile">
+                            <a itemprop="url" href="#">
+                                <img itemprop="image" class="mobile" src="images/logo-homev6.png" alt="Bacba logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bacba-close-menu">
+                        <button class="lines"></button>
+                    </div>
+                </div>
+                <div class="bacba-mobile-menu">
+                    <ul>
+                        <li class="menu-item has_sub">
+                            <a href="index.html">Home</a>
+                            <button class="mobile-arrow">arrow</button>
+                            <ul class="sub_menu uk-nav uk-nav-dropdown">
+                                <li><a href="index-2.html">Home 2</a></li>
+                                <li><a href="index-3.html">Home 3</a></li>
+                                <li><a href="index-4.html">Home 4</a></li>
+                                <li><a href="index-5.html">Home 5</a></li>
+                                <li><a href="index-6.html">Home 6</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has_sub">
+                            <a href="shop.html">Shop</a>
+                            <button class="mobile-arrow">arrow</button>
+                            <ul class="sub_menu uk-nav uk-nav-dropdown">
+                                <li><a href="shop-cart.html">Shop Cart</a></li>
+                                <li><a href="shop-detail.html">Shop Detail</a></li>
+                                <li><a href="shop-order.html">Shop Order</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has_sub">
+                            <a href="blog.html">Blog</a>
+                            <button class="mobile-arrow">arrow</button>
+                            <ul class="sub_menu uk-nav uk-nav-dropdown">
+                                <li><a href="blog-detail.html">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item has_sub">
+                            <a href="#">Pages</a>
+                            <button class="mobile-arrow">arrow</button>
+                            <ul class="sub_menu uk-nav uk-nav-dropdown">
+                                <li><a href="contact-us.html">Contact Us</a></li>
+                                <li><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bacba-menu-action">
+                    <div class="textwidget custom-html-widget">
+                        <ul>
+                            <li>
+                                <a id="bacba_search_modal" href="#" class="wc-search"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="wc-wishlist"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="wc-my-account"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="wc-cart"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MENU MOBILE -->
+        <!-- BEGIN SEARCH MODEL -->
+        <div id="search-modal" class="search-modal" tabindex="-1" role="dialog">
+            <div class="modal-header">
+                <a href="#" class="close-modal"></a>
+                <h2>Search</h2>
+            </div>
+            <div class="modal-content">
+                <div class="uk-container uk-container-center">
+                    <form method="get" class="instance-search" action="#">
+                        <div class="search-fields">
+                            <button type="submit" class="search-submit">
+                                <i class="uk-icon-search"></i>
+                            </button>
+                            <input type="text" name="s" placeholder="Search" class="search-field" autocomplete="off">
+                            <input type="hidden" name="post_type" value="product">
+                            <button type="reset" class="search-reset"></button>
+                        </div>
+                    </form>
+                    <div class="search-results">
+                        <div class="uk-text-center loading">
+                            <i class="uk-icon-circle-o-notch uk-icon-spin uk-icon-2x uk-icon-fw"></i>
+                        </div>
+                        <div class="results-container"></div>
+                        <div class="view-more-results uk-text-center">
+                            <a href="#" class="button search-results-button">View more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SEARCH MODEL -->
+        <!-- BEGIN JQUERY JS -->
+        <script src="plugins/jquery-1.12.4.min.js"></script>
+        <script src="plugins/uikit-2.27.5/js/uikit.min.js"></script>
+        <script src="plugins/lightGallery/dist/js/lightgallery-all.min.js"></script>
+        <script src="plugins/rangeSlider/js/ion-rangeSlider/ion.rangeSlider.min.js"></script>
+        <!-- END JQUERY JS -->
+        <!-- BEGIN MAIN JS -->
+        <script src="js/main.js"></script>
+        <!-- END MAIN JS  -->
+    </body>
+</html>

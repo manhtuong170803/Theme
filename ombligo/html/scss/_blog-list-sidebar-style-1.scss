@@ -1,0 +1,45 @@
+/*
+    Section 3
+*/
+.content-blog-list-sidebar-style-1{
+    @extend .content-blog-listing-style-1;
+    overflow: hidden;
+    &.sec-padding{
+        padding: 100px 0;
+    }
+    .box-contaier{
+        &.left{
+            .omb-overlay{
+                .overlay-background{
+                    padding-left: 115px;
+                }
+            }
+            .box{
+                margin-left: 260px;
+                &:before{
+                    @include skewX(-25deg);
+                }
+            }
+        }
+        &.right{
+            .omb-overlay{
+                .overlay-background{
+                    padding-right: 115px;
+                }
+            }
+            .box{
+                margin-right: 260px;
+                &:before{
+                    @include skewX(25deg);
+                }
+            }
+        }
+        .box{
+            .meta{
+                .omb-line{
+                    width: 215px;
+                }
+            }
+        }
+    }
+}

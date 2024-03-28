@@ -1,0 +1,204 @@
+/*
+    Section 1
+*/
+.newsletter-popup-style-1{
+    #mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99;
+        background: rgba($primary-color-blue,.75);
+        display: none;
+    }
+    .window{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        z-index: 999;
+        text-align: center;
+    }
+    #dialog{
+        padding: 15px;
+        .background-rgba{
+            background: rgba($default-text,.1);
+            padding: 15px;
+            .box{
+                background: $default-text;
+                padding: 70px 60px;
+                #cloes_popup{
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                    background: $default-text;
+                    font-size: 24px;
+                    color: $black-text;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 9999;
+                    transition: all .5s ease;
+                    &:hover{
+                        @include scale(1.2);
+                        transition: all .5s ease;
+                    }
+                }
+                .omb-title{
+                    p{
+                        padding: 0 75px;
+                    }
+                }
+                .uk-form{
+                    .uk-form-icon{
+                        width: 100%;
+                        input{
+                            padding: 5px 55px 5px 25px;
+                            width: 100%;
+                            height: 50px;
+                            line-height: 50px;
+                            border: 2px solid #ececec;
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 14px;
+                            color: $black-text;
+                            outline: none;
+                            &:focus{
+                                background: $default-text;
+                                border: 2px solid $primary-color-orange;
+                                + .icon{
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                        .icon{
+                            font-size: 18px;
+                            color: $black-text;
+                            opacity: .25;
+                            position: absolute;
+                            right: 20px;
+                            top: 45%;
+                            @include translateY(-50%);
+                        }
+                    }
+                    .omb-button{
+                        width: 100%;
+                        border: none;
+                        border-radius: 0;
+                        background: $primary-color-blue;
+                        color: $default-text !important;
+                        margin-bottom: 25px;
+                        margin-top: 20px;
+                        &:before{
+                            background: $primary-color-orange;
+                            border-radius: 0;
+                        }
+                    }
+                    .check-box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        input{
+                            margin-right: 13px;
+                            width: 13px;
+                            height: 13px;
+                            border-radius: 0;
+                        }
+                        p{
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 12px;
+                            color: $black-text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Section 2
+*/
+.slider-newsletter{
+    .tp-mask-wrap{
+        overflow: visible !important;
+        .banner-caption-h3{
+            position: relative;
+            &:before,&:after{
+                content: '';
+                width: 25px;
+                height: 2px;
+                background: $primary-color-orange;
+                position: absolute;
+                top: 50%;
+                @include translateY(-50%);
+            }
+            &:before{
+                left: -45px;
+            }
+            &:after{
+                right: -45px;
+            }
+            h3{
+                font-family: 'Oswald', sans-serif;
+                font-size: 36px;
+                font-weight: 700;
+                line-height: 40px;
+                color: $default-text;
+                display: inline-block;
+            }
+        }
+        .banner-caption-p{
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: $default-text;
+            text-align: center;
+        }
+        .banner-caption-read-more{
+            line-height: 46px;
+            font-weight: 700;
+            .omb-button{
+                border: 2px solid $default-text;
+                border-radius: 0;
+                font-family: 'Oswald', sans-serif;
+                font-size: 14px;
+                color: $default-text;
+                padding: 0 25px;
+                background: transparent;
+                &:before{
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+    .tp-bullets{
+        counter-reset: section;
+		margin-top: -95px;
+        .tp-bullet{
+            width: 10px;
+            height: auto;
+            text-align: center;
+            background: transparent;
+            box-shadow: none;
+            &:before{
+                counter-increment: section;
+                content: counter(section);
+                font-family: 'Oswald', sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                color: #f2f2f2;
+            }
+            &.selected{
+                background: transparent;
+                &:after{
+                    display: none;
+                }
+                &:before{
+                    content: '_';
+                }
+            }
+        }
+    }
+}

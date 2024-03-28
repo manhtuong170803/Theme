@@ -1,0 +1,59 @@
+/*
+    Section 3
+*/
+.content-blog-list-sidebar-style-2{
+    @extend .content-blog-listing-style-2;
+    background: $default-text;
+    ul{
+        li{
+            &:first-child{
+                .box{
+                    .content-default{
+                        border-top: 1px solid #e5e5e5;
+                    }
+                }
+            }
+            .box{
+                .content-hidden{
+                    background: url('../images/blog-list-sidebar-style-2/background.jpg') no-repeat center center;
+                    @include background-cover();
+                    .text{
+                        padding: 40px 50px;
+                    }
+                    .comment{
+                        a{
+                            .icon{
+                                padding: 0 10px;
+                                margin: 0;
+                            }
+                            i{
+                                left: -10px;
+                                right: -10px;
+                            }
+                        }
+                    }
+                }
+                .content-default{
+                    border: 1px solid #e5e5e5;
+                    border-top: none;
+                }
+            }
+        }
+    }
+    .uk-pagination{
+        margin-top: 80px;
+        position: relative;
+        text-align: left;
+        li{
+            &.prev,&.next{
+                position: absolute;
+            }
+            &.prev{
+                right: 60px;
+            }
+            &.next{
+                right: 0;
+            }
+        }
+    }
+}

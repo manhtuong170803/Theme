@@ -1,0 +1,105 @@
+.bacba-adress{
+    .list-icon.icon-center.text-center{
+        text-align: center;
+        .icon_holder{
+            margin-bottom: 30px;
+            img{
+                border-radius: 50%;
+            }
+        }
+        .icon_text_holder{
+            .icon_text_inner{
+                .icon_title{
+                    font-size: 18px;
+                    line-height: 28px;
+                    @include font-poppins-medium();
+                    color: #222222;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    margin-bottom: 1px;
+                }
+                p{
+                    line-height: 28px;
+                    font-size: 14px;
+                    @include font-poppins-light();
+                    color: #1f1d1d;
+                    margin-top: 0px;
+                    letter-spacing: 0.65px;
+                    a{
+                        color: #1f1d1d;
+                    }
+                }
+            }
+        }
+    }
+}
+.contact-page-google-map {
+    padding: 55px 0px 100px 0px;
+    .google-map {
+        height: 540px;
+    }
+}
+.row-contact {
+    background: #fafafa;
+    #form_contact { 
+        padding: 30px;
+        h3 {
+            font-size: 18px;
+            line-height: 40px;
+            @include font-poppins-medium();
+            color: #333333;
+        }
+        .input-text {
+            font-size: 12px;
+            @include font-poppins-light();
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #c8c8c8;
+            height: 39px;
+            padding-left: 23px;
+            outline: none;
+            color: #333333;
+            
+            &:focus {
+                border: 1px solid $primary-color-v6;
+            }
+        }
+        .input-comment {
+            font-size: 12px;
+            @include font-poppins-light();
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #c8c8c8;
+            padding-left: 23px;
+            outline: none;
+            min-height: 185px;
+            color: #333333;
+        }
+        .div-right {
+            text-align: right;
+            .kc-button { 
+                font-size: 14px;
+                @include font-poppins-medium();
+                display: inline-block;
+                padding: 0px 59px;
+                border: 1px solid $primary-color-v6;
+                border-radius: 42px;
+                background: $primary-color-v6;
+                color: #fff;
+                text-transform: uppercase;
+                outline: none;
+                transition: all .3s ease;
+                cursor: pointer;
+                line-height: 42px;
+                &:hover {
+                    background: transparent;
+                    color: $primary-color-v6;
+                }
+            }
+            
+            @include media-query(max, 768px) {
+                text-align: center;
+            }
+        }
+    }
+}

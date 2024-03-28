@@ -1,0 +1,150 @@
+.site-header {
+    &.header-v6.blog {
+        .header {
+            padding-bottom: 59px;   
+        }
+    }
+}
+.breadcrumb-blog {
+    padding-bottom: 100px;
+    .box-breadcrum {
+        border-top: 1px solid #ccc7c4;
+        border-bottom: 1px solid #ccc7c4;
+        .uk-breadcrumb {
+            text-align: center;
+            padding: 14px 0px;
+            li {
+                display: inline-block;
+                a {
+                    font-size: 16px;
+                    font-family: 'Poppins Light', sans-serif;
+                    text-transform: uppercase;
+                    color: #6b6867;
+                }
+                span {
+                    font-size: 16px;
+                    font-family: 'Poppins Light', sans-serif;
+                    text-transform: uppercase;
+                    color: #6b6867;
+                }
+            }
+            li:nth-child(n+2) {
+                &:before {
+                    content: ">";
+                    width: 5px;
+                    height: 8px;
+                    color: #6b6867;
+                    font-weight: 700;
+                    font-family: 'Poppins Light', sans-serif;
+                } 
+            }
+        }
+    }
+}
+
+/* ------------------------------
+   Blog column styles
+   ---------------------------- */
+.blog-grid {
+    padding-bottom: 100px;
+    .kc-blog-wrap {
+        padding-bottom: 60px;
+        .blog-thumbnail {
+            height: auto;
+            position: relative;
+            img {
+                height: 100%;
+                display: block;
+            }
+            .overlay {
+                background: #e43a3e75;
+                position: absolute;
+                @include scale(0);
+                transition: all .5s ease;
+                &:before {
+                    content: "";
+                    border: 1px solid #fff;
+                    width: 89%;
+                    height: 89%;
+                    position: absolute;
+                    @include scale(0);
+                    transition: all .5s ease;
+                }
+                .overlay-content {
+                    .uk-icon-link {
+                        color: #ffffff;
+                        font-size: 20px;
+                    }
+                }
+            }
+            &:hover {
+                .overlay {
+                    @include scale(1);
+                    &:before {
+                        @include scale(1);
+                    }
+                }
+            }
+        }
+        .blog-content {
+            background: #fcfcfc;
+            padding-left: 30px;
+            h4 {
+                font-size: 14px;
+                font-family: 'Poppins Regular', sans-serif;
+                color: #db132b;
+                padding-top: 30px;
+                margin: 0;
+                display: inline-block;
+                border-bottom: 1px solid;
+            }
+            h5 {
+                margin: 0;
+                padding-bottom: 14px;
+                padding-top: 19px;
+                a {
+                    font-size: 14px;
+                    @include font-poppins-medium();
+                    color: #1e1d1d;
+                    text-transform: uppercase;
+                }
+            }
+            p {
+                font-size: 12px;
+                font-family: 'Poppins Regular', sans-serif;
+                color: #686563; 
+                margin: 0;
+                padding-bottom: 28px;
+            }
+        }
+    }
+    .pagination {
+        ul {
+            text-align: center;
+            li {
+                display: inline-block;
+                padding-left: 20px;
+                a {
+                    font-size: 14px;
+                    @include font-poppins-medium();
+                    color: #1e1d1d;
+                }
+                &.active {
+                    a {
+                        span {
+                            height: 24px;
+                            width: 24px;
+                            line-height: 24px;
+                            text-align: center;
+                            display: block;
+                            font-size: 14px;
+                            color: #fff;
+                            border-radius: 50%;
+                            background: #db132b; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+/*
+ * Title:   Bacba Shop - HTML Template
+ * Author:  QTC Media
+ */
+
+/* --------------------------------------------------------
+[Table of contents]
+1. Mimin
+2. Variables
+3. Globals style
+4. Font
+5. Header
+6. Footer
+7. RV Slider
+8. Home 1
+9. Home 2
+10. Home 3
+11. Home 4
+12. Home 5
+13. Home 6
+14. Shop
+15. Shop Detail
+16. 404
+17. Blog
+18. Contact Us
+19. Shop Order
+20. Shop Cart
+[End table of contents]
+----------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import 'mimin';
+@import 'variables';
+@import 'font_face';
+@import 'globals';
+@import 'header';
+@import 'footer';
+@import 'rv_slider';
+@import 'home_v1';
+@import 'home_v2';
+@import 'home_v3';
+@import 'home_v4';
+@import 'home_v5';
+@import 'home_v6';
+@import 'shop';
+@import 'shop_detail';
+@import '404';
+@import 'blog';
+@import 'contact_us';
+@import 'shop_order'; 
+@import 'shop_cart';

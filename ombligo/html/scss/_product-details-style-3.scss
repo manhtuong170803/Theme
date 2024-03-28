@@ -1,0 +1,187 @@
+/*
+    Section 1
+*/
+.sec-border{
+    border-bottom: 1px solid #e3e3e3;
+}
+/*
+    Section 2
+*/
+.content-product-details-style-3{
+    &.sec-padding{
+        padding-top: 50px;
+    }
+    .box-details{
+        border: 1px solid #e7e7e7;
+        padding: 0 60px;
+        @extend .oily-rag-clothing;
+        .thumbnai-fotorama{
+            border: none;
+            border-bottom: 1px solid #e6e6e6;
+            position: relative;
+            .logo{
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                left: auto;
+            }
+            .hot-sale{
+                position: absolute;
+                top: 50px;
+                left: 10px;
+                right: auto;
+            }
+            .fotorama{
+                margin: 0;
+                .fotorama__nav-wrap{
+                    .fotorama__nav{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        .box{
+            padding: 55px 0 0 0;
+            .content{
+                h5{
+                    float: left;
+                    margin-right: 50px;
+                    padding-bottom: 30px;
+                }
+                .rating{
+                    padding-bottom: 30px;
+                    li{
+                        height: 26px;
+                        line-height: 26px;
+                        .rateYo{
+                            top: 5px;
+                        }
+                    }
+                }
+                p{
+                    clear: left;
+                }
+                .add-to-card{
+                    .box-tag{
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    .reviews{
+        @extend .oily-rag-clothing;
+        background: #f2f2f2;
+        margin-top: 60px;
+        padding: 60px;
+        .box{
+            padding: 0;
+            background: $default-text;
+            .content{
+                .information{
+                    .menu-info{
+                        text-align: center;
+                        border-top: none;
+                        border-bottom: 1px solid #e6e6e6;
+                        margin-bottom: 0;
+                        li{
+                            padding: 0;
+                            margin: 0 35px -1px 35px;
+                            &:first-child{
+                                margin-left: 0;
+                            }
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                            &:after{
+                                display: none;
+                            }
+                            a{
+                                height: 61px;
+                                line-height: 61px;
+                            }
+                        }
+                    }
+                    ul.uk-switcher{
+                        li{
+                            .content-text{
+                                padding: 30px;
+                                align-items: center;
+                                display: flex;
+                                transition: all .5s ease;
+                                &:nth-child(even){
+                                    border-top: 1px solid #e5e5e5;
+                                    border-bottom: 1px solid #e5e5e5;
+                                }
+                                &:hover{
+                                    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                                    transition: all .5s ease;
+                                }
+                                img{
+                                    display: block;
+                                    margin-right: 30px;
+                                }
+                                .text{
+                                    -ms-flex: 1 1 auto;
+                                    .meta{
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 8px;
+                                        position: relative;
+                                        h3{
+                                            padding: 0;
+                                            font-size: 18px;
+                                            font-weight: 700;
+                                            line-height: normal;
+                                            margin-right: 45px;
+                                            position: relative;
+                                            &:before{
+                                                content: '';
+                                                display: block;
+                                                width: 4px;
+                                                height: 4px;
+                                                border-radius: 50%;
+                                                background: #f6cc4c;
+                                                position: absolute;
+                                                right: -25px;
+                                                top: 50%;
+                                                @include translateY(-50%);
+                                            }
+                                        }
+                                        span{
+                                            font-family: 'Oswald', sans-serif;
+                                            font-size: 12px;
+                                            font-weight: 500;
+                                            color: $black-text;
+                                            opacity: .5;
+                                        }
+                                        .rateYo{
+                                            top: 50%;
+                                            @include translateY(-50%);
+                                            left: auto;
+                                            right: 0;
+                                            position: absolute;
+                                        }
+                                    }
+                                    p{
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .recent-product-details{
+        @extend .best-seller;
+        margin-top: 60px;
+        .omb-title.omb-title-three{
+            margin-bottom: 0;
+        }
+        .seller-box li .box .social li.price a.buy-now.omb-hover-sweep-to-bottom:hover span{
+            right: 25px;
+        }
+    }
+}

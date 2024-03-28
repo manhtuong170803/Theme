@@ -1,0 +1,13 @@
+/*
+    Section 3
+*/
+.best-product-listing-style-1{
+    @extend .best-accessories;
+    .omb-button-center{
+        margin-top: 80px;
+        .omb-button{
+            border: 1px solid #e0e0e0;
+            padding: 0 37px;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/*
+    Section 1
+*/
+.error-style-2{
+    @extend .error-style-1;
+    background: url('../images/error/background-style-2.jpg') no-repeat center center;
+    @include background-cover();
+    img{
+        opacity: .05;
+    }
+    .box{
+        .box-rotate{
+            border: 5px solid $black-text;
+            a{
+                color: $black-text;
+            }
+        }
+    }
+}

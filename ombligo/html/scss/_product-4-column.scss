@@ -1,0 +1,12 @@
+/*
+    Section 3
+*/
+.motorcycle-product-4-column{
+    @extend .best-new-product;
+    .omb-title{
+        padding-bottom: 80px;
+        .title{
+            padding-bottom: 0;
+        }
+    }
+}

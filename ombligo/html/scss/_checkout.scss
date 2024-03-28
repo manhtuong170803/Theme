@@ -1,0 +1,379 @@
+/*
+    Section 3
+*/
+.shopping-about{
+    .box{
+        &:hover{
+            .step{
+                span{
+                    opacity: .25;
+                }
+            }
+        }
+        &.uk-active{
+            .step{
+                .uncomplete{
+                    display: none;
+                }
+                .complete{
+                    display: block;
+                    opacity: 1;
+                }
+            }
+        }
+        .step{
+            i.complete{
+				font-size: 36px;
+				color: $black-text;
+				line-height: 40px;
+				font-weight: 700;
+				padding-bottom: 14px;
+			}
+            .complete{
+                display: none;
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.content-checkout{
+    .omb-title{
+        margin-bottom: 55px;
+        padding-bottom: 0;
+        text-align: left;
+        h3{
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .title{
+            .omb-line{
+                &.one{
+                    top: 10px;
+                }
+                &.two{
+                    top: 15px;
+                }
+                &.three{
+                    top: 20px;
+                }
+            }
+        }
+    }
+    .checkbox{
+        p{
+            input[type="checkbox"]:not(:checked),input[type="checkbox"]:checked{
+                position: absolute;
+                left: -9999px;
+            }
+            input[type="checkbox"]:not(:checked) + label,input[type="checkbox"]:checked + label{
+                position: relative;
+                padding-left: 30px;
+                cursor: pointer;
+            }
+            input[type="checkbox"]:not(:checked) + label:before,input[type="checkbox"]:checked + label:before{
+                content: '';
+                position: absolute;
+                left: 0; 
+                top: 0;
+                width: 15px; 
+                height: 15px;
+                border: 2px solid #d9d9d9;
+                background: $default-text;
+            }
+            input[type="checkbox"]:not(:checked) + label:after,input[type="checkbox"]:checked + label:after{
+                content: '\4e';
+                font-family: 'ElegantIcons';
+                position: absolute;
+                top: -3px;
+                left: 3px;
+                font-size: 14px;
+                color: $black-text;
+                transition: all .5s;
+            }
+            input[type="checkbox"]:not(:checked) + label:after{
+                opacity: 0;
+                transform: scale(0);
+            }
+            input[type="checkbox"]:checked + label:after{
+                opacity: 1;
+                transform: scale(1);
+            }
+            label{
+                &:hover{
+                    &:before{
+                        border: 2px solid $primary-color-orange !important;
+                    }
+                }
+            }
+        }
+    }
+    #billing_checkout{
+        .box-billing{
+            margin-top: 18px;
+            &.address{
+                input{
+                    &.address-two{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            h5{
+                font-size: 14px;
+                font-weight: 700;
+                color: $black-text;
+                line-height: 40px;
+                float: left;
+                span{
+                    font-size: 18px;
+                    color: $primary-color-orange;
+                    padding-left: 10px;
+                }
+            }
+            input{
+                height: 40px;
+                line-height: 40px;
+            }
+            textarea,input{
+                width: 80%;
+                padding: 5px 15px;
+                border: 1px solid #e6e6e6;
+                float: right;
+                transition: all .5s ease;
+                &:focus{
+                    outline: none;
+                    border: 1px solid $primary-color-orange;
+                    transition: all .5s ease;
+                }
+            }
+        }
+        .checkbox{
+            margin-top: 35px;
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                color: $black-text;
+                margin-bottom: 13px;
+            }
+        }
+    }
+    .sidebar-style-one{
+        .your-order{
+            padding: 0;
+            border-top: none;
+            h3{
+                padding-left: 15px;
+                &:before{
+                    left: -5px;
+                }
+            }
+            .order{
+                table{
+                    tr{
+                        &:first-child{
+                            border-bottom: 1px solid #e6e6e6;
+                            margin-bottom: 15px;
+                        }
+                        &:last-child{
+                            border-bottom: 1px solid #e6e6e6;
+                            td{
+                                padding-bottom: 38px;
+                                padding-top: 20px;
+                                h4{
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    color: $black-text;
+                                }
+                            }
+                        }
+                        th{
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $black-text;
+                            padding: 0 0 13px 0;
+                            &:last-child{
+                                text-align: right;
+                            }
+                        }
+                        td{
+                            padding: 8px 0;
+                            &:last-child{
+                                text-align: right;
+                            }
+                            h5{
+                                font-size: 14px;
+                                font-weight: 500;
+                                color: $black-text;
+                                line-height: 20px;
+                            }
+                            p{
+                                font-size: 14px;
+                                font-weight: 700;
+                                color: $black-text;
+                            }
+                        }
+                    }
+                }
+                .shipping-handling{
+                    border-bottom: 1px solid #e6e6e6;
+                    padding-bottom: 25px;
+                    p{
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: $black-text;
+                        float: left;
+                    }
+                    ul{
+                        float: right;
+                        li{
+                            margin-bottom: 10px;
+                            position: relative;
+                            input[type=radio]{
+                                position: absolute;
+                                visibility: hidden;
+                            }
+                            input[type='radio']:checked ~ .check{
+                                &:before{
+                                    background: $black-text;
+                                }
+                            }
+                            label{
+                                display: block;
+                                padding-left: 25px;
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 12px;
+                                font-weight: 500;
+                                color: $black-text;
+                                line-height: 23px;
+                                cursor: pointer;
+                            }
+                            .check{
+                                display: block;
+                                width: 16px;
+                                height: 16px;
+                                background: $default-text;
+                                border: 2px solid #e4e3e3;
+                                border-radius: 50%;
+                                outline: none;
+                                position: absolute;
+                                left: 0;
+                                top: 7px;
+                                &:before{
+                                    content: '';
+                                    display: block;
+                                    width: 8px;
+                                    height: 8px;
+                                    margin: 2px auto 0 auto;
+                                    margin-top: 2px;
+                                    border-radius:50%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .order-total{
+                    padding-top: 25px;
+                    h5{
+                        font-size: 18px;
+                        font-weight: 700;
+                        color: $black-text;
+                        span{
+                            float: right;
+                        }
+                    }
+                }
+                .payment{
+                    @extend .shipping-handling;
+                    margin-top: 45px;
+                    border-bottom: none;
+                    ul{
+                        float: none;
+                        li{
+                            margin: -1px 0 0 0;
+                            border: 1px solid #e6e6e6;
+                            input[type='radio']:checked + label{
+                                &:before{
+                                    content: '\4b';
+                                }
+                            }
+                            input[type='radio']:checked ~ article{
+                                height: auto;
+                                margin-bottom: 17px;
+                                padding-top: 17px;
+                                border-top: 1px solid #e6e6e6;
+                            }
+                            label{
+                                display: flex;
+                                align-items: center;
+                                font-size: 14px;
+                                font-weight: 700;
+                                height: 60px;
+                                line-height: 60px;
+                                padding: 0 30px 0 60px;
+                                position: relative;
+                                &:before{
+                                    content: '\4c';
+                                    font-family: 'ElegantIcons';
+                                    font-size: 14px;
+                                    color: $black-text;
+                                    opacity: .5;
+                                    position: absolute;
+                                    right: 20px;
+                                    top: 50%;
+                                    @include translateY(-50%);
+                                }
+                                img{
+                                    margin-left: 12px;
+                                }
+                            }
+                            .check{
+                                top: 22px;
+                                left: 30px;
+                            }
+                            article{
+                                padding: 0 30px;
+                                height: 0px;
+                                overflow: hidden;
+                                p{
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: $black-text;
+                                }
+                            }
+                        }
+                    }
+                }
+                .checkbox{
+                    margin-top: 6px;
+                    p{
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $black-text;
+                        input[type="checkbox"]:not(:checked) + label:after,input[type="checkbox"]:checked + label:after{
+                            left: 2px;
+                        }
+                        input[type="checkbox"]:checked + label:before{
+                            border: 2px solid $primary-color-orange !important;
+                        }
+                    }
+                }
+                .omb-button{
+                    width: 100%;
+                    border-radius: 0;
+                    border: 2px solid $black-text;
+                    background: $primary-color-orange;
+                    color: $default-text !important;
+                    margin-top: 20px;
+                    margin-bottom: 12px;
+                    padding: 0 25px;
+                    border: 2px solid $primary-color-orange;
+                    &:before{
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

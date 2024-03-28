@@ -1,0 +1,174 @@
+/*
+    Section 3
+*/
+.content-blog-listing-style-2{
+    background: #f2f2f2;
+    ul{
+        position: relative;
+        overflow: hidden;
+        li{
+            .box{
+                .content{
+                    .number{
+                        h3{
+                            font-size: 70px;
+                            line-height: 75px;
+                            font-weight: 700;
+                        }
+                    }
+                    .text{
+                        h5{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: $black-text;
+                        }
+                        p{
+                            font-size: 14px;
+                            font-weight: 500;
+                            color: $black-text;
+                            opacity: .5;
+                        }
+                    }
+                    .comment{
+                        a{
+                            display: inline-block;
+                            .icon{
+                                font-size: 17px;
+                                padding: 0 15px;
+                                margin: 0 5px;
+                            }
+                        }
+                    }
+                }
+                .content-default{
+                    background: $default-text;
+                    border-bottom: 1px solid #e5e5e5;
+                    cursor: pointer;
+                    .number{
+                        border-right: 1px solid #ebebeb;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        h3{
+                            color: $black-text;
+                        }
+                    }
+                    .text{
+                        padding: 45px 65px;
+                        h5{
+                            color: $black-text;
+                            padding-bottom: 10px;
+                        }
+                        p{
+                            color: $black-text;
+                        }
+                    }
+                    .comment{
+                        border-left: 1px solid #ebebeb;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        a{
+                            pointer-events: none;
+                            .icon{
+                                color: $black-text;
+                            }
+                        }
+                    }
+                }
+                .content-hidden{
+                    display: none;
+                    background: url('../images/blog-listing-style-2/background.jpg') no-repeat center center;
+                    @include background-cover();
+                    .number{
+                        border-right: 1px solid rgba(#f2f2f2,.15);
+                        text-align: center;
+                        h3{
+                            color: $default-text;
+                            padding-top: 55px;
+                        }
+                    }
+                    .text{
+                        padding: 50px 65px;
+                        h5{
+                            color: $default-text;
+                            display: inline-block;
+                            padding-bottom: 3px;
+                            text-decoration: underline;
+                            transition: all .5s ease;
+                            &:hover{
+                                color: $primary-color-orange;
+                                transition: all .5s ease;
+                            }
+                        }
+                        p{
+                            color: $default-text;
+                            padding-top: 20px;
+                        }
+                        .omb-button{
+                            border: 2px solid $primary-color-orange;
+                            background: transparent;
+                            height: 40px;
+                            line-height: 40px;
+                            padding: 0 35px;
+                            font-size: 12px;
+                            margin-top: 25px;
+                            color: $default-text;
+                            &:before{
+                                top: -2px;
+                                right: -2px;
+                                bottom: -2px;
+                                left: -2px;
+                            }
+                        }
+                    }
+                    .comment{
+                        padding-top: 100px;
+                        border-left: 1px solid rgba(#f2f2f2,.15);
+                        text-align: center;
+                        a{
+                            position: relative;
+                            &:hover{
+                                i{
+                                    top: -40px;
+                                    opacity: 1;
+                                    transition: all .5s ease;
+                                }
+                            }
+                            .icon{
+                                color: $default-text;
+                            }
+                            i{
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 10px;
+                                font-weight: 500;
+                                color: $default-text;
+                                line-height: 20px;
+                                background: $primary-color-orange;
+                                padding: 0 5px;
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                opacity: 0;
+                                transition: all .5s ease;
+                                &:before{
+                                    content: '';
+                                    width: 0;
+                                    height: 0;
+                                    border-left: 6px solid transparent;
+                                    border-right: 6px solid transparent;
+                                    border-top: 6px solid $primary-color-orange;
+                                    position: absolute;
+                                    bottom: -6px;
+                                    left: 50%;
+                                    @include translateX(-50%);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

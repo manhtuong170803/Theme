@@ -1,0 +1,238 @@
+/*
+    Section 3
+*/
+.content-blog-listing-style-1{
+    &.sec-padding{
+        padding-bottom: 0;
+    }
+    .box-contaier{
+        margin-bottom: 50px;
+        position: relative;
+        &:hover{
+            .omb-overlay{
+                .overlay-background{
+                    @include scaleY(1);
+                    transition: all .5s ease;
+                }
+            }
+            .box{
+                .meta{
+                    a{
+                        border: 2px solid $primary-color-orange;
+                        transition: all .5s ease;
+                    }
+                }
+            }
+        }
+        &.left{
+            .box{
+                margin-left: 280px;
+                border-left: none;
+                padding: 58px 58px 38px 0;
+                text-align: right;
+                &:before{
+                    border-right: none;
+                    left: -90px;
+                    @include skewX(-30deg);
+                }
+                >.omb-line{
+                    margin: 20px 0 15px auto;
+                }
+                .meta{
+                    justify-content: flex-end;
+                    a{
+                        margin-right: 25px;
+                        margin-left: 45px;
+                        span{
+                            padding: 0 25px;
+                        }
+                    }
+                    h6{
+                        padding-left: 30px;
+                    }
+                }
+            }
+            .omb-overlay{
+                left: 0;
+                &:before{
+                    border-left: none;
+                    border-bottom: 240px solid $default-text;
+                    border-left: 120px solid transparent;
+                    right: 0;
+                }
+                .overlay-background{
+                    padding-left: 190px;
+                    justify-content: flex-start;
+                }
+            }
+        }
+        &.right{
+            .box{
+                margin-right: 280px;
+                border-right: none;
+                padding: 58px 0 38px 58px;
+                text-align: left;
+                &:before{
+                    border-left: none;
+                    right: -90px;
+                    @include skewX(30deg);
+                }
+                >.omb-line{
+                    margin: 20px auto 15px 0;
+                }
+                .meta{
+                    justify-content: flex-start;
+                    a{
+                        margin-left: 25px;
+                        margin-right: 45px;
+                        span{
+                            padding: 0 25px;
+                        }
+                    }
+                    h6{
+                        padding-right: 30px;
+                    }
+                }
+            }
+            .omb-overlay{
+                justify-content: flex-end;
+                right: 0;
+                &:before{
+                    border-right: none;
+                    border-bottom: 240px solid $default-text;
+                    border-right: 120px solid transparent;
+                    left: 0;
+                }
+                .overlay-background{
+                    padding-right: 190px;
+                    justify-content: flex-end;
+                }
+            }
+        }
+        .box{
+            border: 2px solid #ececec;
+            position: relative;
+            &:before{
+                content: '';
+                position: absolute;
+                top: -2px;
+                bottom: -2px;
+                width: 200px;
+                border: 2px solid #ececec;
+                background: $default-text;
+                z-index: 1;
+            }
+            h3{
+                font-size: 30px;
+                font-weight: 500;
+                color: #2d2d2d;
+                transition: all .5s ease;
+                &:hover{
+                    color: $primary-color-orange;
+                    transition: all .5s ease;
+                }
+            }
+            >.omb-line{
+                width: 50px;
+                height: 2px;
+                position: relative;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 500;
+                color: #2d2d2d;
+                opacity: .5;
+                padding-bottom: 25px;
+            }
+            .meta{
+                display: flex;
+                align-items: center;
+                .omb-line{
+                    width: 245px;
+                    height: 1px;
+                    background: $black-text;
+                    position: relative;
+                    z-index: 9;
+                }
+                a{
+                    display: block;
+                    border: 2px solid #ececec;
+                    @include skewX(-30deg);
+                    transition: all .5s ease;
+                    &:hover{
+                        background: $primary-color-orange;
+                        transition: all .5s ease;
+                        span{
+                            color: $default-text;
+                            transition: all .5s ease;
+                        }
+                    }
+                    span{
+                        display: block;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black-text;
+                        height: 40px;
+                        line-height: 40px;
+                        @include skewX(30deg);
+                        transition: all .5s ease;
+                    }
+                }
+                h6{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #2d2d2d;
+                    .icon{
+                        font-size: 14px;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+        .omb-overlay{
+            display: block;
+            width: 50%;
+            z-index: 5;
+            position: absolute;
+            top: 50%;
+            @include translateY(-50%);
+            &:before{
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 0;
+                z-index: 3
+            }
+            .overlay-background{
+                background: rgba($primary-color-blue,.85);
+                display: flex;
+                align-items: center;
+                z-index: 1;
+                .day{
+                    padding: 15px;
+                    border: 2px solid $default-text;
+                    text-align: center;
+                    h3{
+                        font-size: 30px;
+                        font-weight: 700;
+                        line-height: 35px;
+                        color: $default-text
+                    }
+                    p{
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: $default-text
+                    }
+                }
+            }
+            img{
+                display: block;
+            }
+        }
+    }
+    .uk-pagination{
+        margin-top: 50px;
+    }
+}

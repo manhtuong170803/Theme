@@ -1,0 +1,52 @@
+/*
+    Section 3
+*/
+.product-sale-style-two{
+    @extend .product-sale-style-one;
+    .box{
+        &.box-left{
+            .box-product-rectag{
+                .box-img{
+                    .logo-sale{
+                        margin-right: -20px;
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+        &.box-right{
+            .box-product-rectag{
+                .box-img{
+                    .logo-sale{
+                        margin-bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.content-product-2-column-sidebar-style-two{
+    @extend .content-product-2-column-sidebar-style-one;
+    @extend .best-cycle;
+    &.sec-padding-grid{
+        .uk-grid{
+            >*{
+                .uk-grid{
+                    margin-left: -30px;
+                    >*{
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+    ul.box-product{
+        margin-top: 60px;
+    }
+    .showing-item{
+        margin-top: 5px;
+    }
+}

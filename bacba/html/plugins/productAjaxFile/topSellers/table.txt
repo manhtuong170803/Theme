@@ -1,0 +1,48 @@
+<li class="table grid-item uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                <div class="box-product uk-text-center">
+                                    <div class="product-image">
+                                        <img src="images/products/product-16.jpg" alt="ezBoozt Braided Sports">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                        <p class="product-cat">Boots</p>
+                                        <p class="product-price">$250.00</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="table grid-item uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                <div class="box-product uk-text-center">
+                                    <div class="product-image">
+                                        <img src="images/products/product-13.jpg" alt="ezBoozt Braided Sports">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                        <p class="product-cat">Boots</p>
+                                        <p class="product-price">$250.00</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="newarrival grid-item uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                <div class="box-product uk-text-center">
+                                    <div class="product-image">
+                                        <img src="images/products/product-15.jpg" alt="ezBoozt Braided Sports">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                        <p class="product-cat">Boots</p>
+                                        <p class="product-price">$250.00</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="newarrival grid-item uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+                                <div class="box-product uk-text-center">
+                                    <div class="product-image">
+                                        <img src="images/products/product-14.jpg" alt="ezBoozt Braided Sports">
+                                    </div>
+                                    <div class="product-info">
+                                        <h3 class="product-name"><a href="#">ezBoozt Braided Sports</a></h3>
+                                        <p class="product-cat">Boots</p>
+                                        <p class="product-price">$250.00</p>
+                                    </div>
+                                </div>
+                            </li>

@@ -1,0 +1,188 @@
+/*
+    Section 3
+*/
+.paratical-information{
+    @extend .welcome-ombligo-about;
+    .box{
+        .flipping{
+            .box-info{
+                text-align: center;
+                padding: 5px;
+                border: 5px solid #f2f2f2;
+                overflow: hidden;
+                position: relative;
+                transition: all .5s ease;
+                &:hover{
+                    border: 5px solid $primary-color-green;
+                    transition: all .5s ease;
+                    &:before{
+                        bottom: 0;
+                        transition: all .5s ease;
+                    }
+                    .content{
+                        .head-content{
+                            background: $primary-color-green;
+                            transition: all .5s ease;
+                            .shap-border{
+                                border-top: 45px solid $primary-color-green;
+                                transition: all .5s ease;
+                            }
+                            .icon{
+                                color: $default-text;
+                                transition: all .5s ease;
+                            }
+                        }
+                    }
+                }
+                &:before{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-left: 25px solid transparent;
+                    border-right: 25px solid transparent;
+                    border-bottom: 30px solid $primary-color-green;
+                    position: absolute;
+                    bottom: -30px;
+                    left: 50%;
+                    @include translateX(-50%);
+                    transition: all .5s ease;
+                }
+                .content{
+                    padding-bottom: 65px;
+                    .head-content{
+                        padding: 55px 0 30px 0;
+                        background: #f3f3f3;
+                        position: relative;
+                        transition: all .5s ease;
+                        .shap-border{
+                            width: 0;
+                            height: 0;
+                            border-left: 170px solid transparent;
+                            border-right: 170px solid transparent;
+                            border-top: 45px solid #f3f3f3;
+                            position: absolute;
+                            bottom: -45px;
+                            left: 0;
+                            right: 0;
+                            transition: all .5s ease;
+                        }
+                        .icon{
+                            font-size: 70px;
+                            color: $black-text;
+                            transition: all .5s ease;
+                        }
+                    }
+                    h3{
+                        padding-top: 100px;
+                        padding-bottom: 35px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: $black-text;
+                    }
+                    a{
+                        &:hover{
+                            p{
+                                color: $primary-color-orange;
+                            }
+                        }
+                    }
+                    p{
+                        font-size: 13px;
+                        font-weight: 500;
+                        color: $black-text;
+                        padding: 25px 0;
+                        margin: 0 50px;
+                        &.sec-border{
+                            border-bottom: 1px solid #e9e9e9;
+                        }
+                    }
+                }
+            }
+        }
+        .icon-moto{
+            img{
+                margin-top: 40px;
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.contact-form{
+    background: #f3f3f3;
+    .omb-title.omb-title-three{
+        margin-bottom: 30px;
+    }
+    .uk-form{
+        .uk-form-icon{
+            width: 100%;
+            margin-top: 30px;
+            input,textarea{
+                width: 100%;
+                background: $default-text;
+                padding: 5px 50px 5px 25px;
+                outline: none;
+                border: none;
+                font-family: 'Oswald', sans-serif;
+                font-size: 14px;
+                font-weight: 500;
+                color: $black-text;
+                transition: all .5s ease;
+                &:focus{
+                    background: $default-text;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                    transition: all .5s ease;
+                    &::-webkit-input-placeholder{
+                        opacity: 1;
+                        color: $black-text;
+                    }
+                    &:-moz-placeholder{
+                        opacity: 1;
+                        color: $black-text;
+                    }
+                    &::-moz-placeholder{
+                        opacity: 1;
+                        color: $black-text;
+                    }
+                    &:-ms-input-placeholder{
+                        opacity: 1;
+                        color: $black-text !important;
+                    }
+                    + .icon{
+                        opacity: 1;
+                        transition: all .5s ease;
+                    }
+                }
+                &.error{
+                    box-shadow: 2px 4px 6px rgba(255, 0, 0, 0.2);
+                }
+            }
+            label.error{
+                display: none!important;
+            }
+            input{
+                height: 50px;
+                line-height: 50px;
+            }
+            .icon{
+                font-size: 18px;
+                color: $black-text;
+                opacity: .35;
+                position: absolute;
+                right: 20px;
+                top: 16px;
+                transition: all .5s ease;
+            }
+        }
+        .omb-button-center{
+            margin-top: 30px;
+            .omb-button{
+                border: none;
+                border-radius: 0;
+                color: $default-text !important;
+                background: $primary-color-orange;
+            }
+        }
+    }
+}

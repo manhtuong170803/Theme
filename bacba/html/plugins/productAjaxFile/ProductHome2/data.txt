@@ -1,0 +1,16 @@
+<li class="grid-item uk-width-medium-1-4 uk-width-small-1-1 uk-width-1-1">
+    <div class="box-product uk-text-center">
+        <div class="product-image">
+            <img src="images/home-2/sports-product-17.jpg" alt="ezBoozt Braided Sports">
+            <a href="#" class="add-to-cart" tabindex="0"></a>
+            <a href="#" class="wc-button wc-button-wishlist" tabindex="0"></a>
+            <a href="#" class="wc-button wc-button-compare" tabindex="0"></a>
+            <a href="#" class="wc-button wc-button-quick-view" tabindex="0"></a>
+        </div>
+        <div class="product-info">
+            <h3 class="product-name"><a href="#" tabindex="0">ezBoozt Braided Sports</a></h3>
+            <p class="product-cat">Fashion Flat</p>
+            <p class="product-price">$250.00</p>
+        </div>
+    </div>
+</li>

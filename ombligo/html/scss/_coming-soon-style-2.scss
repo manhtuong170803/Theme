@@ -1,0 +1,105 @@
+/*
+    Section 1
+*/
+.coming-soon-style-2{
+    height: 100vh;
+    .full-height{
+        height: 100vh;
+    }
+    .box-left{
+        display: flex;
+        align-items: center;
+        padding-left: 85px;
+        background: url('../images/coming-soon-style-2/background-left.jpg') no-repeat center center;
+        @include background-cover();
+        .coming-soon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                display: block;
+            }
+            h3{
+                font-size: 100px;
+                font-weight: 700;
+                line-height: 100px;
+                color: $default-text;
+                margin-left: -120px;
+            }
+        }
+    }
+    .box-right{
+        display: flex;
+        align-items: center;
+        background: url('../images/coming-soon-style-2/background-right.jpg') no-repeat center center;
+        @include background-cover();
+        .count-down{
+            margin-left: -40px;
+            .box{
+                position: relative;
+                margin: 65px 0;
+                &:hover{
+                    .rotate{
+                        background: $primary-color-orange;
+                        transition: all .5s ease;
+                    }
+                }
+                .rotate{
+                    display: inline-block;
+                    background: rgba($black-text,.07);
+                    padding: 5px;
+                    @include rotate(45deg);
+                    transition: all .5s ease;
+                    .rotate-background{
+                        background: $default-text;
+                        span{
+                            display: block;
+                            width: 70px;
+                            height: 70px;
+                            line-height: 70px;
+                            text-align: center;
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 24px;
+                            font-weight: 700;
+                            color: $black-text;
+                            @include rotate(-45deg);
+                        }
+                    }
+                }
+                .box-text{
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    left: 125px;
+                    top: 50%;
+                    @include translateY(-50%);
+                    .omb-line{
+                        width: 150px;
+                        height: 1px;
+                        background: rgba($black-text,.1);
+                        position: relative;
+                        margin-right: 30px;
+                    }
+                    .text{
+                        position: relative;
+                        p{
+                            font-size: 14px;
+                            font-weight: 700;
+                            color: $black-text;
+                        }
+                        h1{
+                            font-size: 100px;
+                            font-weight: 700;
+                            line-height: 100px;
+                            color: rgba($black-text,.05);
+                            position: absolute;
+                            bottom: 0;
+                            left: -6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

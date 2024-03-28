@@ -1,0 +1,16 @@
+/*
+    Section 3
+*/
+.best-product-2-column-style-1{
+    @extend .shop-by-product;
+    &.sec-padding{
+        padding-bottom: 100px;
+    }
+    .omb-title{
+        padding-bottom: 80px;
+    }
+    .omb-button-rectag-center{
+        margin-top: 50px;
+    }
+}
+

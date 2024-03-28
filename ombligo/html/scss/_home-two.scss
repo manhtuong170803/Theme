@@ -1,0 +1,983 @@
+/*
+    Section 1 
+*/
+.slider-home-two{
+    overflow: hidden !important;
+    position: relative;
+    .omb-line{
+        z-index: 999;
+        width: 50px;
+        height: 2px;
+        top: 50%;
+        @include translateY(-50%);
+    }
+    #slider_home_two{
+        .tp-bgimg{
+            position: relative;
+        }
+        .tp-mask-wrap{
+            overflow: visible !important;
+            .banner-caption-h1{
+                font-size: 70px;
+                line-height: 80px;
+                font-family: 'Oswald', sans-serif;
+                font-weight: bold;
+                color: $black-text;
+                letter-spacing: 2px;
+                z-index: 999;
+                position: relative;
+            }
+            .banner-caption-h3{
+                font-size: 14px;
+                line-height: 30px;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                letter-spacing: 2px;
+                color: $black-text;
+                z-index: 999;
+                position: relative;
+                .omb-line{
+                    right: -65px;
+                }
+            }
+            .banner-caption-p{
+                font-size: 13px;
+                line-height: 24px;
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                color: #8c8c8c;
+                z-index: 999;
+                position: relative;
+            }
+            .banner-caption-button{
+                .omb-button{
+                    font-size: 14px;
+                    border: 1px solid #e0e0e0;
+                    padding: 0 35px;
+                }
+            }
+            .banner-caption-line{
+                font-family: 'Oswald', sans-serif;
+                font-weight: 500;
+                line-height: 24px;
+                font-size: 14px;
+                color: $black-text;
+                .omb-line{
+                    width: 72px;
+                    height: 1px;
+                    background: $black-text;
+                    left: -100px;
+                }
+            }
+        }
+        .tparrows{
+            width: 50px;
+            height: 50px;
+            background: $default-text;
+            opacity: 1 !important;
+            visibility: visible !important;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            &:before{
+                display: none;
+            }
+            &.tp-leftarrow{
+                &:after{
+                    content: '\34';
+                    font-family: 'ElegantIcons';
+                    color: $black-text;
+                    font-size: 24px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+            &.tp-rightarrow{
+                &:after{
+                    content: '\35';
+                    font-family: 'ElegantIcons';
+                    color: $black-text;
+                    font-size: 24px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+/*
+    Section 2
+*/
+.welcome-ombligo{
+    .box{
+        padding-left: 23px;
+        .title{
+            position: relative;
+            h3{
+                font-family: 'Oswald', sans-serif;
+                font-size: 36px;
+                line-height: 45px;
+                font-weight: 500;
+                color: $black-text;
+                margin-bottom: 15px;
+            }
+            .omb-line{
+                width: 45px;
+                height: 2px;
+                left: -23px;
+            }
+            .box-hot{
+                padding: 0 10px;
+                font-family: 'Oswald', sans-serif;
+                font-size: 10px;
+                font-weight: 500;
+                color: $default-text;
+                line-height: 20px;
+                position: absolute;
+                top: -35px;
+                &:before{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    border-right: 6px solid transparent;
+                    position: absolute;
+                    left: 0;
+                    bottom: -6px;
+                }
+                &.box-hot-green{
+                    background: $primary-color-green;
+                    right: 166px;
+                    &:before{
+                        border-top: 6px solid $primary-color-green;
+                    }
+                }
+                &.box-hot-orange{
+                    background: $primary-color-orange;
+                    right: 68px;
+                    &:before{
+                        border-top: 6px solid $primary-color-orange;
+                    }
+                }
+            }
+        }
+        p{
+            margin: 0 0 25px 0;
+            font-family: 'Oswald', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            color: #8c8c8c;
+        }
+        .button{
+            margin-right: 10px;
+            &:hover{
+                .icon{
+                    opacity: 1;
+                    transition: all .5s ease;
+                }
+            }
+            .icon{
+                box-shadow: none;
+                color: $black-text;
+                font-size: 24px;
+                font-weight: 500;
+                opacity: .5;
+                transition: all .5s ease;
+            }
+        }
+    }
+    .flipping{
+        margin: -250px auto 0 auto;
+        .gallery-flipping{
+            width: 100%;
+            height: 560px;
+            position: relative;
+            .wrapper{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                .box-img{
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    &:first-child{
+                        p{
+                            display: block;
+                        }
+                    }
+                    &:last-child{
+                        p{
+                            display: none;
+                        }
+                    }
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                    p{
+                        display: none;
+                        height: 70px;
+                        line-height: 70px;
+                        background: rgba($primary-color-blue,0.85);
+                        color: $default-text;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/*
+    Section 3
+*/
+.bestbuy-cycling{
+    &.sec-padding{
+        padding-top: 0;
+    }
+    .logo{
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-bottom: 100px;
+        &:before,&:after{
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #dfdfdf;
+            opacity: .75;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 9;
+        }
+        &:before{
+            top: 26px;
+        }
+        &:after{
+            bottom: 26px;
+        }
+        img{
+            margin: 0 auto;
+            background: $default-text;
+            padding: 0 25px;
+            display: block;
+            position: relative;
+            z-index: 999;
+        }
+    }
+    .box{
+        &.box-two{
+            text-align: right;
+            .intro{
+                padding-left: 0;
+                padding-right: 30px;
+                .title{
+                    .title-h3{
+                        h3{
+                            padding: 0 0 0 15px;
+                            &.sec-padding{
+                                padding: 0 45px 0 0;
+                            }
+                            span{
+                                padding-left: 30px;
+                                padding-right: 0;
+                            }
+                        }
+                        .omb-line{
+                            &.one{
+                                left: 0;
+                                right: auto;
+                                bottom: 23px;
+                            }
+                            &.two{
+                                right: 0;
+                                left: auto;
+                                top: 50%;
+                                @include translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .box-img{
+            position: relative;
+            width: 100%;
+            height: auto;
+            >img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            .overlay-background{
+                background: rgba($primary-color-blue,.85);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    display: block;
+                    &:hover{
+                        .icon{
+                            color: $primary-color-orange;
+                            transition: all .5s ease;
+                        }
+                    }
+                    .icon{
+                        font-size: 18px;
+                        color: $default-text;
+                        transition: all .5s ease;
+                        position: absolute;
+                        &.icon_search-2{
+                            left: 95px;
+                        }
+                        &.arrow_right{
+                            right: 95px;
+                        }
+                    }
+                }
+            }
+        }
+        .intro{
+            width: 100%;
+            padding-left: 30px;
+            .title{
+                .title-h3{
+                    display: inline-block;
+                    position: relative;
+                    h3{
+                        padding: 0 45px 0 0;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 36px;
+                        font-weight: 700;
+                        color: $black-text;
+                        line-height: 50px;
+                        &.sec-padding{
+                            padding: 4px 0 4px 45px;
+                        }
+                        span{
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 100px;
+                            line-height: 70px;
+                            font-weight: 700;
+                            color: $black-text;
+                            opacity: .1;
+                            padding-right: 30px;
+                        }
+                    }
+                    .omb-line{
+                        width: 75px;
+                        height: 2px;
+                        &.one{
+                            right: 0;
+                            bottom: 23px;
+                        }
+                        &.two{
+                            left: 0;
+                            top: 50%;
+                            @include translateY(-50%);
+                        }
+                    }
+                }
+            }
+            p{
+                font-family: 'Oswald', sans-serif;
+                font-size: 13px;
+                font-weight: 500;
+                color: #8c8c8c;
+                padding: 9px 0 35px 0;
+            }
+            a{
+                border: 1px solid #e7e7e7;
+                border-radius: 25px;
+                height: 40px;
+                line-height: 40px;
+                color: #8c8c8c;
+                font-weight: 700;
+                padding: 0 20px;
+                margin-right: 7px;
+                transition: all .5s ease;
+                &:before{
+                    display: none;
+                    transition: all .5s ease;
+                }
+                &:hover{
+                    color: $black-text;
+                    span{
+                        color: $primary-color-orange;
+                        transition: all .5s ease;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                span{
+                    font-weight: 500;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+    .text-best-cycling{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+        h3{
+            display: inline-block;
+            font-family: 'Oswald', sans-serif;
+            font-size: 100px;
+            line-height: 100px;
+            font-weight: 700;
+            color: $black-text;
+            opacity: .1;
+            position: relative;
+            left: auto;
+            right: auto;
+        }
+        .box-icon{
+            position: relative;
+            margin: 0 75px;
+            img{
+                display: block;
+            }
+            .omb-line{
+                width: 25px;
+                height: 2px;
+                &.left-one{
+                    top: 49%;
+                    left: -45px;
+                }
+                &.left-two{
+                    bottom: 46%;
+                    left: -45px;
+                }
+                &.right-one{
+                    top: 49%;
+                    right: -45px;
+                }
+                &.right-two{
+                    bottom: 46%;
+                    right: -45px;
+                }
+            }
+        }
+    }
+}
+/*
+    Section 4
+*/
+.collection{
+    background: #f2f2f2;
+    .title{
+        
+        text-align: center;
+        margin-bottom: 70px;
+        .title-h3{
+            display: inline-block;
+            position: relative;
+            h3{
+                font-family: 'Oswald', sans-serif;
+                font-size: 36px;
+                line-height: 50px;
+                font-weight: 700;
+                color: $black-text;
+            }
+            .omb-line{
+                width: 75px;
+                height: 2px;
+                &.left{
+                    left: -45px;
+                }
+                &.right{
+                    right: -45px;
+                }
+            }
+        }
+    }
+    .uk-slidenav-position{
+        .uk-slider{
+            >li{
+                padding: 0 30px;
+                &.uk-active{
+                    .box{
+                        box-shadow: 0 0 15px rgba(0,0,0,0.2);
+                    }
+                }
+                .box{
+                    border: 1px solid #dbdbdb;
+                    background: $default-text;
+                    .shap{
+                        top: 0;
+                        right: 30px;
+                    }
+                    img{
+                        display: block;
+                        margin: 50px auto 90px auto;
+                        max-height: 320px;
+                    }
+                    .intro{
+                        border-top: 1px solid #dbdbdb;
+                        li{
+                            display: block;
+                            float: left;
+                            height: 70px;
+                            line-height: 70px;
+                            text-align: center;
+                            border-right: 1px solid #dbdbdb;
+                            &:last-child{
+                                border-right: none;
+                            }
+                            &:hover{
+                                a{
+                                    .icon{
+                                        color: $default-text;
+                                        transition: all .5s ease;
+                                    }
+                                }
+                            }
+                            &.box-icon{
+                                width: 8%;
+                                &.omb-hover-sweep-to-bottom{
+                                    &:before{
+                                        background: $primary-color-orange;
+                                    }
+                                }
+                            }
+                            &.box-title{
+                                width: 53%;
+                            }
+                            &.box-price{
+                                width: 23%;
+                            }
+                            a{
+                                display: block;
+                                .icon{
+                                    font-size: 18px;
+                                    color: $black-text;
+                                    transition: all .5s ease;
+                                }
+                            }
+                            p{
+                                text-align: center;
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 18px;
+                                font-weight: 300;
+                                color: $black-text;
+                            }
+                            h3{
+                                font-family: 'Oswald', sans-serif;
+                                font-size: 24px;
+                                font-weight: 700;
+                                color: $black-text;
+                                padding: 0 5px;
+                                height: 70px;
+                                line-height: 70px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                span{
+                                    font-family: 'Oswald', sans-serif;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: $black-text;
+                                    opacity: .35;
+                                    text-decoration: line-through;
+                                    padding-left: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .omb-nav{
+            margin-top: 80px;
+            justify-content: center;
+            display: flex;
+            .uk-slidenav{
+                display: block;
+                top: auto;
+                left: auto;
+                right: auto;
+                color: $black-text;
+                font-size: 24px;
+                width: 50px;
+                height: 50px;
+                line-height: 45px;
+                border: 1px solid #e7e7e7;
+                background: $default-text;
+                position: relative;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+/*
+    Section 5
+*/
+.bigsale-cycling{
+    @extend .bestbuy-cycling;
+    &.sec-padding{
+        padding: 100px 0;
+    }
+    .box{
+        &.box-two{
+            .box-img{
+                .background-top-green{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                }
+                .background-bottom-green{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+            }
+            .intro{
+                padding: 20px 55px 0 0;
+            }
+        }
+        .box-img{
+            position: relative;
+            padding: 50px 0 60px 0;
+            img{
+                width: auto;
+                margin: 0 auto;
+                position: relative;
+                z-index: 9;
+            }
+            .background-top-blue{
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+            .background-bottom-blue{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+            }
+        }
+        .intro{
+            padding: 0 0 0 55px;
+            p{
+                padding-bottom: 25px;
+            }
+            .omb-button{
+                color: $black-text;
+                padding: 0 35px;
+                height: 50px;
+                line-height: 50px;
+                &:before{
+                    display: block;
+                }
+                &:hover{
+                    color: $default-text;
+                }
+            }
+        }
+    }
+}
+/*
+    Section 6
+*/
+.watch-video{
+    background: url('../images/index-2/background-watch-video.jpg') no-repeat center center;
+    @include background-cover();
+    &.sec-padding{
+        padding: 280px 0 423px 0;
+    }
+    a{
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        color: $default-text;
+        display: flex;
+        align-items: center;
+        padding: 48px 0;
+        img{
+            display: block;
+            margin-right: 30px;
+        }
+    }
+    .uk-slidenav-position{
+        .uk-slider{
+            .box{
+                text-align: right;
+                p{
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: $default-text;
+                    position: relative;
+                }
+                h3{
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 36px;
+                    line-height: 45px;
+                    font-weight: 500;
+                    color: $default-text;
+                    position: relative;
+                    margin: 50px 0;
+                }
+                p,h3{
+                    &:before{
+                        content: '';
+                        height: 1px;
+                        background: $default-text;
+                        position: absolute;
+                        top: 50%;
+                        @include translateY(-50%);
+                    }
+                }
+                p{
+                    &:before{
+                        width: 260px;
+                        left: 170px;
+                        opacity: .15;
+                    }
+                }
+                h3{
+                    &:before{
+                        width: 195px;
+                        left: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .uk-slidenav{
+            display: block;
+            width: auto;
+            height: auto;
+            line-height: normal;
+            padding: 0;
+            margin: 0;
+            right: 90px;
+            left: auto;
+            opacity: .15;
+            transition: all .5s ease;
+            &:hover{
+                opacity: 1;
+                transition: all .5s ease;
+            }
+            &.uk-slidenav-previous{
+                top: -105px;
+                &:before{
+                    content: '\32';
+                    font-family: 'ElegantIcons';
+                }
+            }
+            &.uk-slidenav-next{
+                top: auto;
+                bottom: -100px;
+                &:before{
+                    content: '\33';
+                    font-family: 'ElegantIcons';
+                }
+            }
+        }
+    }
+}
+/*
+    Section 7
+*/
+.latest-blog{
+    @extend .welcome-ombligo;
+    .flipping{
+        .gallery-flipping{
+            .wrapper{
+                .box-img{
+                    p{
+                        display: none;
+                        height: 70px;
+                        line-height: 70px;
+                        background: rgba($primary-color-blue,0.85);
+                        color: $default-text;
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 16px;
+                        font-weight: 500;
+                        text-align: center;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+            }
+            .button{
+                &.prev{
+                    left: auto;
+                    right: -120px;
+                }
+                &.next{
+                    left: auto;
+                    right: -165px;
+                }
+            }
+        }
+    }
+    .box{
+        padding-left: 100px;
+        .title{
+            h3{
+                display: inline-block;
+                position: relative;
+                sup{
+                    color: $black-text;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 12px;
+                    font-weight: 500;
+                    opacity: .5;
+                    position: absolute;
+                    right: -85px;
+                    top: -15px;
+                }
+            }
+            .omb-line{
+                top: 40%;
+            }
+        }
+    }
+}
+/*
+    Section 8
+*/
+.carousel-slider-home-two{
+    @extend .bestbuy-cycling;
+    .uk-slidenav-position{
+        .uk-slider{
+            li{
+                .box{
+                    display: block;
+                    position: relative;
+                    img{
+                        display: block;
+                        width: 100%;
+                        height: auto;
+                    }
+                    .overlay-background{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        h3{
+                            position: relative;
+                            font-family: 'Oswald', sans-serif;
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: $default-text;
+                            padding: 0 40px;
+                            height: 60px;
+                            line-height: 60px;
+                            z-index: 999;
+                            transition: all .5s ease;
+                            &.background-blue{
+                                background: rgba($primary-color-blue,0.85);
+                            }
+                            &.background-green{
+                                background: rgba($primary-color-green,0.85);
+                            }
+                            &.background-orange{
+                                background: rgba($primary-color-orange,0.85);
+                            }
+                            &:hover{
+                                padding-right: 70px;
+                                transition: all .5s ease;
+                                span{
+                                    opacity: 1;
+                                    right: 35px;
+                                    transition: all .5s ease;
+                                }
+                            }
+                            span{
+                                opacity: 0;
+                                position: absolute;
+                                right: 0;
+                                transition: all .5s ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .uk-slidenav{
+            display: block;
+            font-size: 36px;
+            color: $black-text;
+            opacity: .25;
+            transition: all .5s ease;
+            &:hover{
+                opacity: 1;
+                transition: all .5s ease;
+            }
+            &.uk-slidenav-previous{
+                left: -95px;
+            }
+            &.uk-slidenav-next{
+                right: -95px;
+            }
+        }
+    }
+}
+/*
+    Section 9
+*/
+.map{
+    overflow: hidden;
+    background: url('../images/index-2/map.jpg') no-repeat center center;
+    @include background-cover();
+    &.sec-padding{
+        padding: 150px 0;
+    }
+    .address{
+        position: relative;
+        background: $default-text;
+        padding: 50px 100px;
+        img{
+            display: block;
+            position: absolute;
+            margin-top: -40px;
+            top: 50%;
+            left: 50%;
+            @include translateX(-50%);
+        }
+        .icon{
+            font-size: 35px;
+            color: $black-text;
+        }
+        p{
+            font-family: 'Oswald', sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            color: $black-text;
+            padding-top: 20px;
+        }
+    }
+}
+

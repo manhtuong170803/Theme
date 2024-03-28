@@ -1,0 +1,28 @@
+/*
+    Section 4
+*/
+.content-product-3-column-sidebar{
+    @extend .content-product-2-column-sidebar-style-three;
+    background: #f2f2f2;
+    &.sec-padding{
+        padding-top: 100px;
+        padding-bottom: 40px;
+    }
+    .sidebar-style-one{
+        border: 5px solid #e4e4e4;
+        background: $default-text;
+    }
+    ul.box-product{
+        li{
+            .omb-product{
+                margin-top: 0;
+                margin-bottom: 60px;
+                .price{
+                    h3{
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+}
